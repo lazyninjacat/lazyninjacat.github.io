@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+section {
+  position: relative;
+
+  width: 100%;
+  padding: 0px;
+  display: table;
+  margin: 0;
+  max-width: none;
+
+  height: 100%;
+
+  &:nth-of-type(2n) {
+    background-color: rgba(2, 101, 231, 0.87);
+  }
+
+  &:nth-of-type(3n) {
+    background-color: rgba(80, 25, 126, 0.87);
+  }
+
+  section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 80%;
+    background: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.8) 80%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.8) 80%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+}
+
+.intro {
+  height: 100vh;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// Animate the size, inside
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+// Animate the size, outside
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+// Size can also be negative; see how it's smaller than the element
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+// Animating from the bottom
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+// And from the left
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+// Multiple shadows, one on the outside, another on the inside
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }
+}
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+// Make a map with the class names and matching colors
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae,
+  close: #ff7f82,
+  raise: #ffa260,
+  up: #e4cb58,
+  slide: #8fc866,
+  offset: #19bc8b
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+section {
+  height: 100vh;
+}
+
+// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+button {
+  color: var(--color);
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+body {
+  color: #fff;
+  background: hsl(227, 10%, 10%);
+  font: 300 1em "Fira Sans", sans-serif;
+  font-size: 20px;
+
+  // Center everything ever
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+// Basic button styles
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  font-size: 30px;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1.5em 2.5em;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 80px;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+//variables
+$basic-dark-color: #212121;
+$basic-light-color: #fff;
+$border-radius: 50%;
+$font-size: 25px;
+
+.effect {
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  background-color: $basic-dark-color;
+
+  background-color: inherit;
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+
+  a {
+    text-decoration: none !important;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    color: $basic-dark-color; //or change to your own color
+    border: 2px solid $basic-dark-color; //or change to your own color
+
+    i {
+      position: relative;
+      z-index: 3;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.effect.thurio {
+  a {
+    transition: border-radius 0.4s linear 0s;
+    transform: rotate(45deg);
+
+    i {
+      transition: transform 0.4s linear 0s;
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      border-radius: 0px;
+    }
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 450px;
+  margin: 2rem;
+  position: relative;
+  width: 35%;
+  color: black;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-1:hover {
+  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.25), 0 30px 30px rgba(0, 0, 0, 0.22);
+}
+
+#mylevelup {
+  background-image: url("./mlu_banner.png");
+}
+
+#algorhythm {
+  background-image: url("./lazyninjacat_avatar.png");
+}
+
+#inferno {
+  background-image: url("./inferno_banner.png");
+}
+
+#musicspheres {
+  background-image: url("./stars.jpg");
+}
+
+@media only screen and (max-width: 2000px) {
+  .card {
+    width: 45%;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .card {
+    width: 45%;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .card {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 90%;
+    height: 375px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
