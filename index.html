@@ -4,76 +4,141 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-        <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="./style.css" />
+      
 
-    <title>Matt Riddett's website</title>
+
+    <title>Matthew Riddett | Software Developer</title>
     </head>
-
-    <section class="intro">
-        <div class="content">
-            <h1>Hello. </h1>
-            <h2>Welcome to <code>Matt Riddett</code>'s little corner of the internet.</h2>
-            <br>
-            <div class="buttons">
-                <div>
-                    <a href="#portfolio"><button class="raise" style="border-color: rgba(2, 101, 231, 0.87)">Portfolio</button></a>
-                    <a href="#resume"><button class="raise" style="border-color: rgb(2, 231, 143)">Resume</button></a>
-                    <a href="#blog"><button class="raise" style="border-color: rgb(223, 6, 107)">Blog</button></a>
-                    <a href="#mysterybox"><button class="raise" style="border-color: rgb(231, 170, 2)">MysteryBox</button></a>
-                    <a href="#contact"><button class="raise" style="border-color: rgb(184, 61, 255)">Contact</button></a>   
+    <div class="sticky"><h1 class="verticalLine-Left gradient-border" id="upperLeftVerticalLine"></h1></div>
+    <header class="sticky margin1percent">
+        <div>
+            <nav>
+                <div id="headerLogo" class="gradient-border">
+                    <a href='#home'>MR</a>
                 </div>
-                <div class="effect thurio">
-                    <a href="https://www.twitter.com/lazyninjacat" class="pulse" style="border: 2px solid rgb(72, 193, 241); color: rgb(72,193,241)" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="https://github.com/lazyninjacat" class="pulse" style="border: 2px solid rgb(102, 22, 207); color: rgb(102, 22, 207)" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="https://soundcloud.com/mr0-2" class="pulse" style="border: 2px solid rgb(206, 82, 0); color: rgb(206, 82, 0)" title="SoundCloud"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/matthew-riddett-106937167/" class="pulse" style="border: 2px solid; color: rgb(13, 108, 218)" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                </div>  
-            </div>            
+                <div><h1  class="headerHorizontalLine gradient-border">     </h1></div>
+                <div id="headerMenu">
+                    <ul>
+                        <li class="gradient-border"><a href='#about'><code>01.</code> About</a></li>
+                        <!-- <li><a href='#experience'><code>02.</code> Experience</a></li> -->
+                        <li class="gradient-border"><a href='#portfolio'><code>02.</code>Portfolio</a></li>
+                        <li class="gradient-border"><a href='#contact'><code>03.</code> Contact</a></li>                       
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </section> 
+    </header>
 
-    <section id="portfolio">
-        <div class="content">  
-                <h1>Portfolio</h1>
-                <h2 align="center"><strong>Behold.</strong> My stuff!</h2>
-                <div id="mylevelup" class="card card-1");></div>
-                <div id="inferno" class="card card-1"></div>
-                <div id="musicspheres" class="card card-1"></div>
-                <div id="algorhythm" class="card card-1"></div>
+ 
+
+    <div class="sticky" id="socialLine">
+        <div class="socialContainer gradient-border">                
+           
+            <a href="https://www.twitter.com/lazyninjacat" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/lazyninjacat" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://soundcloud.com/mr0-2" title="SoundCloud"><i class="fa fa-soundcloud" aria-hidden="true"></i></a>            
+            <a href="https://www.linkedin.com/in/matthew-riddett-106937167/" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://codepen.io/lazyninja" title="Codepen"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+            
+        </div>       
+
+    </div>        
+    <body>
+       
+        <section  class="margin20percent" id="home">
+            <div class="verticalCenter">
+                <p><code class="line1">Hi, my name is </code></p>
+                <h1 class="line2 nameHeading">Matthew Riddett.</h1>
+                <div class="line3" style="font-size: 45px">I build games, apps, and things for the web.</div>
+                    <p class="titleDescriptionText line4">I'm a software developer based in Victoria, BC specializing in designing and building high-quality websites, games and apps.</p>
+                <br>
+                <a href="#contact"><button class="gradient-border ">Get In Touch</button></a>                    
+            </div>
+        </section>
+        
+        <section id="about" class="margin20percent">   
+        
+            <div class="grid-container verticalCenter">
+                <h2 class="sectionHeader line1"><code>01.</code> About Me</h2>
+                <div class="sectionDescriptionText line2">          
+                <p>Hello! I'm Matthew, a software developer based in Victoria, BC who enjoys building games, apps, and things that live on the internet. I'm a design-freak and a perfectionist. My projects combine intuitive, good-looking user interfaces with efficient and modern backends.</p>
+                <p>I am self-taught and always learning more.</p>
+                <p>Here are a few technologies I've been working with recently:</p>
+                <ul class="sectionBulletList line3">
+                    <li>Javascript (ES6+)</li>
+                    <li>HTML & (S)CSS</li>
+                    <li>React</li>
+                    <li>JQuery</li>
+                    <li>MySQL & SQLite</li>
+                    <li>Node.js</li>
+                    <li>GraphQL</li>
+                    <li>C#</li>
+                    <li>Unity 3D</li>
+                    <li>Gatsby.js</li>
+                </ul>
+            </div>
+                <img class="profileImg line4" src="./Static/mrprofilepic.JPG"/>
+                
+            </div>
+        </section>
+
+<!--         
+        <section id="experience" class="margin20percent">   
+            <div class="verticalCenter">
+                <h2><code>02.</code> Where I've Worked</h2>
+                <div>
+                    <h2>Founder @ MyLevelUP Learning Technologies</h2>
+                    <h3>November 2018 - Present</h3>
+                    <ul>
+                        <li>Designed and built the MyLevelUP app using Unity3D, C#, SQLite and Git</li>
+                        <li>Set up and ran an Agile based development pipeline using Gitlab CI/CD toolchain</li>
+                        <li>Conducted in-depth beta program with early user group</li>
+                        <li>Released for Android and iOS in October 2019</li>
+                        <li>Designed and built the MyLevelUP website</li>
+                        <li>Created and maintained social media accounts and online engagement</li>
+                        <li>Managed team of volunteer programmers and educational designers using Agile methedology</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Research Associate @ UVic Technology Integrated Learning Department</h2>
+                    <ul>
+                        <li>Designed and conducted several client experience studies on current and new educational technologies such as audience interaction systems, smart classrooms, learning managements systems, and 'flipped' classroom technologies. 
+                        <li>Conducted interviews, focus groups, surveys and systematic observations.</li>
+                        <li>Established best practices and toolsets for proffessors to 'flip' their classrooms, recording lectures and posting them on YouTube or a class website, providing sophisticated micro-learning tools for students to study outside of class, and using class time to do hands-on projects or group work</li>
+                        <li>Managed small team of 3 junior researchers.</li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+        
+
+        <section id="portfolio" class="margin20percent">
+            <div  class="verticalCenter">  
+                <h2><code>02.</code> Some Things I've Built</h2>
+                <div id="mlu">MyLevelUP - a personalized learning app for non-verbal kids on the autsim spectrum</div>
+                <div id="inferno">Fall into Inferno - A single-player narrative based adventure following Dante through the inferno of the Devine Comedy.</div>
+                <div id="starman">Starman's Song Quest - a game where the environment changes depending on the song playing, and the player uses weapons and items by singing and making sound effects with their voice.</div>
+                <div id="algorhythmic">Algorhythmic - an app that gamifies learning about algorithms by using them to manipulate music</div>
+                <div id="2020180">2020 180 - A fitness app</div>
+                <div id="duer">Duer - A website about a mid-20th century Vicoria, BC based artist</div>
+                <div id="cityintought">A City in Thought - A website about political theory</div>
+                <div id="cayc">Carbon Neutral Landscaping Company data collection, tracking and analysis system</div>
+            </div>         
+        </section>
 
 
+        <section id="contact" class="margin20percent">   
+            <div  class="verticalCenter">
+                <h2><code>03.</code> Get In Touch</h1>
+                    <p>I'm currently seeking new opportunities to work with creative, passionate people on cool projects. If you're looking for a developer/designer and you think I might be a good fit, get in touch!</p>
+                <a href="./static/stars.jpg"><button class="gradient-border">Get In Touch</button></a>
+            </div>
+        </section>
 
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="./home.js"></script>
 
-
-        </div>         
-    </section>
-
-
-    <section id="resume">   
-        <div class="content">
-            <h1>Resume</h1>
-        </div> 
-    </section>
-
-    <section id="blog">   
-        <div class="content">
-            <h1>Blog</h1>
-        </div> 
-    </section>
-
-    <section id="mysterybox">   
-        <div class="content">
-            <h1>MysteryBox</h1>
-        </div> 
-    </section>
-
-    <section id="contact">   
-        <div class="content">
-            <h1>Contact</h1>
-        </div> 
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="./home.js"></script>
-  </body>
+    </body>
 </html>
