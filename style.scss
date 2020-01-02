@@ -1,3 +1,6 @@
+// Import fonts //////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
 // A simple, modern main body text default font
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 
@@ -7,17 +10,34 @@
 // A big bold h1 headline font
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
+// Thin modern clean font
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100);
+
+// variables /////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+// Colors
 $background: #000203;
+$menu_background: rgba(0, 0, 0, 0.8);
 $darkgreygreen: #6e8898;
 $lightgreygreen: #9fb1bc;
 $beige: #d3d0cb;
 $yellow: #e2c044;
 $code: lightgreen;
+$nav-font-color: #ffffff;
+$link-hover-color: #2581dc;
+
+// Sizes
+$breakpoint: 799px;
+$nav-height: 80px;
+
+// basic types ///////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 body {
   background-color: $background;
   font-family: Quicksand;
-  font-size: 18px;
+  font-size: 17px;
   color: $lightgreygreen;
 }
 
@@ -27,8 +47,6 @@ h1 {
   font-weight: 1000;
   margin-top: 2px;
   margin-bottom: 2px;
-
-  //border: 2px solid green;
 }
 
 h2 {
@@ -38,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 2px;
   margin-bottom: 2px;
 }
@@ -52,17 +70,16 @@ code {
 section {
   height: 100vh;
   position: relative;
-  margin-bottom: 0%;
   align-self: center;
+  display: inline-block;
+  z-index: 0;
 }
 
 button {
   background-color: inherit;
   color: $lightgreygreen;
-  font-family: Coda;
+  font-family: "Courier New", Courier, monospace;
   padding: 20px;
-  margin-top: 2px;
-  margin-bottom: 2px;
   border-width: 0px;
 }
 
@@ -71,71 +88,19 @@ button:hover {
 }
 
 header {
-  height: 80px;
+  height: 50px;
   width: 100%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
+  z-index: 1;
+  background-color: $menu_background;
+  vertical-align: middle;
+  position: absolute;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 p {
   position: relative;
   line-height: 1.5;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  //border: 2px solid green;
-}
-
-.margin20percent {
-  margin-left: 20%;
-  margin-right: 20%;
-  z-index: 0;
-}
-
-.margin1percent {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto, auto, auto;
-  grid-gap: 0px;
-  height: 50%;
-  position: relative;
-  padding: 10px;
-}
-
-#headerLogo {
-  float: left;
-  font-size: 45px;
-  margin-left: -10px;
-  margin-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-width: 2px;
-  color: $darkgreygreen;
-}
-
-#headerMenu {
-  float: right;
-  font-family: "Courier New", Courier, monospace;
-  margin-right: 30px;
-  margin-top: 23px;
-  color: $lightgreygreen;
-
-  li {
-    display: inline;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
 }
 
 a:link {
@@ -150,6 +115,74 @@ a:visited {
 
 a:hover {
   color: white;
+}
+
+//  #IDs /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+#socialLine {
+  bottom: 0%;
+  top: 100%;
+}
+
+.headerLogo {
+  float: left;
+  font-size: 45px;
+  margin-left: 7px;
+  margin-top: 9px;
+  padding: 3.5px;
+  font-family: PT Sans;
+
+  color: $darkgreygreen;
+  vertical-align: middle;
+}
+
+.headerMenu {
+  float: right;
+  font-family: "Courier New", Courier, monospace;
+  color: $lightgreygreen;
+  margin-top: 15px;
+  margin-right: 10px;
+
+  li {
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 10px;
+  }
+}
+
+.headerMobileMenuIcon {
+  float: right;
+  padding: 10px;
+  font-size: 35px;
+  display: none;
+  margin-top: 8px;
+}
+
+// .classes //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+.margin20percent {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20%;
+
+  z-index: 0;
+}
+
+.margin0percent {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 0px;
+  position: relative;
+  padding: 0px;
 }
 
 .nameHeading {
@@ -172,44 +205,32 @@ a:hover {
 .sectionHeader {
   grid-column-start: 1;
   grid-column-end: 3;
-  padding: 5px;
+  padding: 0px;
   margin-top: auto;
 }
 
 .profileImg {
   grid-column-start: 2;
-  width: 53%;
-  padding-left: 100px;
+  width: 50%;
+  padding-left: 0px;
 
   align-self: center;
 
   border-radius: 20%;
 }
 
-.verticalCenter {
-  margin-top: 20%;
-  position: absolute;
-}
-
-greyblue {
-  color: $yellow;
-}
-
 .titleDescriptionText {
-  margin-right: 50%;
+  margin-right: 0%;
 }
 
 .gradient-border {
-  --border-width: 1px;
+  --border-width: 2px;
 
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
   background: $background;
   border-radius: var(--border-width);
-  border-radius: 5%;
 
   &::after {
     position: absolute;
@@ -231,44 +252,39 @@ greyblue {
       hsl(179, 85%, 66%)
     );
     background-size: 300% 300%;
-    background-position: 0 50%;
+    background-position: 0 100%;
     border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 20s alternate infinite;
-  }
-}
-
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
+    animation: moveGradient 15s alternate infinite;
   }
 }
 
 .verticalLine-Left {
-  border-left: 0px;
-  height: 100px;
+  border: 1px solid;
+  height: 100vh;
   position: absolute;
-  left: 55px;
-  margin: 0%;
-  bottom: 0;
+  left: 42px;
+  margin-top: 10px;
+  bottom: 0px;
+  top: 0px;
 }
 
 .headerHorizontalLine {
-  width: 100%;
-  margin-top: 50px;
-  margin-left: 5vh;
-  margin-right: 50vh;
-  border-bottom: 1px;
+  width: 95%;
+  margin-top: 38px;
+  margin-left: 70px;
+  margin-right: 0px;
+  border: 5px;
   position: absolute;
 }
 
 .socialContainer {
-  width: 25px;
+  width: 16px;
   height: 285px;
   position: absolute;
-  left: 27px;
+  left: 20px;
   margin: 0%;
   display: block;
-  font-size: 23px;
+  font-size: 18px;
   bottom: 25px;
   display: block;
   line-height: 56px;
@@ -280,19 +296,28 @@ greyblue {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 3;
-  background-color: $background;
+  z-index: 1;
 }
 
-#socialLine {
-  bottom: 0%;
-  top: 100%;
-}
+// @media ////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
-#upperLeftVerticalLine {
-  height: 1000px;
-  top: 90px;
-  position: absolute;
+@media only screen and (max-width: 600px) {
+  .socialContainer {
+    display: none;
+  }
+
+  .headerMenu {
+    display: none;
+  }
+
+  .headerMobileMenuIcon {
+    display: inline;
+  }
+
+  .menu {
+    display: inline;
+  }
 }
 
 @media screen and (-webkit-device-pixel-ratio) {
@@ -330,6 +355,15 @@ greyblue {
   }
 }
 
+// @Keyframes ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 @keyframes slidein {
   0% {
     opacity: 0;
@@ -340,4 +374,138 @@ greyblue {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+//////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+#nav-icon3 {
+  width: 50px;
+  height: 45px;
+  position: relative;
+  margin: 0px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 65%;
+  background: $lightgreygreen;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+  display: none;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+  display: none;
+}
+
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 85px;
+  display: none;
+
+  code {
+    font-size: 30px;
+  }
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  display: block;
+  padding: 35px 0 35px 0;
+  border-bottom: 1px solid;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: $lightgreygreen;
+}
+
+.glyphicon-home {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+
+header {
+  display: inline-block;
+  font-size: 12px;
+}
+span {
+  padding-left: 20px;
+}
+a {
+  color: #336699;
 }
