@@ -42,3 +42,10 @@ $(document).ready(function() {
     $(".menu").slideToggle("slow");
   });
 });
+
+$(document).ready(function() {
+  $(".menu").click(function() {
+    $("#nav-icon3").toggleClass("open");
+    $(".menu").slideToggle("slow");
+  });
+});
