@@ -30,9 +30,9 @@
          
             <div class="headerMenu">
                 <ul >
-                    <li class="gradient-border"><a href='#about'><code>01.</code> About</a></li>
-                    <li class="gradient-border"><a href='#portfolio'><code>02.</code> Portfolio</a></li>
-                    <li class="gradient-border"><a href='#contact'><code>03.</code> Contact</a></li>                             
+                    <a href='#about'><li class="gradient-border"><code>01.</code> About</li></a>
+                    <a href='#portfolio'><li class="gradient-border"><code>02.</code> Portfolio</li></a>
+                    <a href='#contact'><li class="gradient-border"><code>03.</code> Contact</li></a>                            
                 </ul>                
             </div>
 
@@ -74,34 +74,37 @@
 
     <div class="sticky" id="socialLine">
         <div class="socialContainer">            
-            <a href="https://www.twitter.com/lazyninjacat" title="Twitter"><i class="fa fa-twitter gradient-border" aria-hidden="true"></i></a>
+            
             <a href="https://github.com/lazyninjacat" title="Github"><i class="fa fa-github gradient-border" aria-hidden="true"></i></a>
-            <a href="https://soundcloud.com/mr0-2" title="SoundCloud"><i class="fa fa-soundcloud gradient-border" aria-hidden="true"></i></a>            
             <a href="https://www.linkedin.com/in/matthew-riddett-106937167/" title="LinkedIn"><i class="fa fa-linkedin-square gradient-border" aria-hidden="true"></i></a>
-            <a href="https://codepen.io/lazyninja" title="Codepen"><i class="fa fa-codepen gradient-border" aria-hidden="true"></i></a>            
+            <a href="https://www.twitter.com/lazyninjacat" title="Twitter"><i class="fa fa-twitter gradient-border" aria-hidden="true"></i></a>
+           
+            <a href="https://codepen.io/lazyninja" title="Codepen"><i class="fa fa-codepen gradient-border" aria-hidden="true"></i></a>       
+            <a href="https://soundcloud.com/mr0-2" title="SoundCloud"><i class="fa fa-soundcloud gradient-border" aria-hidden="true"></i></a>       
         </div>    
     </div>        
     <body>       
         <section id="home">
             <div class="margin20percent">
-                <p><code class="line1">Hi, my name is </code></p>
+                <code class="line1">Hi, my name is </code>
                 <h1 class="line2 nameHeading">Matthew Riddett.</h1>
                 <h2 class="line3">I build games, apps, and things for the web.</h2>
                 <p class="titleDescriptionText line4">I'm a software developer based in Victoria, BC specializing in designing and building high-quality websites, games and apps.</p>
-                <a href="#contact"><button class="gradient-border ">Get In Touch</button></a>                    
+                <br>
+                <a href="#contact"><button class="gradient-border">Get In Touch</button></a>                    
             </div>
         </section>
         
         <section id="about"> 
-            <div class="margin20percent">  
+            <div class="margin20percent margin-top10percent">  
         
-            <div class="grid-container sectionContainer">
-                <h2 class="sectionHeader line1"><code>01.</code> About Me</h2>
-                <div class="sectionDescriptionText line2">          
+            <div class="grid-container ">
+                <h2 class="aboutHeader "><code>01.</code> About Me</h2>
+                <div class="aboutDescriptionText ">          
                 <p>Hello! I'm Matthew, a software developer based in Victoria, BC who enjoys building games, apps, and things that live on the internet. I'm a design-freak and a perfectionist. My projects combine intuitive, good-looking user interfaces with efficient and modern backends.</p>
-                <p>I am self-taught and always learning more.</p>
+                <p>I'm self-taught and always learning more.</p>
                 <p>Here are a few technologies I've been working with recently:</p>
-                <ul class="sectionBulletList line3">
+                <ul class="aboutBulletList ">
                     <li>Javascript (ES6+)</li>
                     <li>HTML & (S)CSS</li>
                     <li>React</li>
@@ -114,8 +117,9 @@
                     <li>Gatsby.js</li>
                 </ul>
             </div>
-            <div>
-                <img class="profileImg line4" src="./Static/mrprofilepic.JPG"/>                
+            <br>
+            <div id="aboutProfilePiclot">
+                <img class="aboutProfileImg" src="./Static/mrprofilepic.JPG"/>                
             </div>
         </div>
         </section>

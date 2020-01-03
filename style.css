@@ -18,9 +18,8 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  font-size: 35px;
+  font-family: PT Sans;
 }
 
 h3 {
@@ -43,6 +42,7 @@ section {
       align-self: center;
   display: inline-block;
   z-index: 0;
+  padding-top: 100px;
 }
 
 button {
@@ -56,12 +56,11 @@ button {
 
 button:hover {
   color: #d3d0cb;
-  font-size: 25px;
   font-weight: bold;
 }
 
 header {
-  height: 69px;
+  height: 70px;
   width: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
@@ -90,6 +89,12 @@ a:hover {
   color: white;
 }
 
+#home {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
 #socialLine {
   bottom: 0%;
   top: 100%;
@@ -98,7 +103,7 @@ a:hover {
 .headerLogo {
   float: left;
   font-size: 45px;
-  margin-left: 7px;
+  margin-left: 2px;
   margin-top: 9px;
   padding: 0px;
   font-family: PT Sans;
@@ -109,24 +114,24 @@ a:hover {
 .headerLogo a {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .headerMenu {
   float: right;
   font-family: "Courier New", Courier, monospace;
   color: #9fb1bc;
-  margin-top: 15px;
-  margin-right: 10px;
+  margin-top: 10px;
+  margin-right: 2px;
 }
 
 .headerMenu li {
   display: inline;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-right: 10px;
 }
 
@@ -136,12 +141,12 @@ a:hover {
   font-size: 25px;
   display: none;
   margin-top: 8px;
+  margin-right: 7px;
 }
 
 .margin20percent {
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   z-index: 0;
 }
 
@@ -153,9 +158,9 @@ a:hover {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 20px;
   position: relative;
-  padding: 0px;
+  padding: 20px;
 }
 
 .nameHeading {
@@ -163,14 +168,14 @@ a:hover {
   font-style: strong;
 }
 
-.sectionDescriptionText {
+.aboutDescriptionText {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 2;
   padding: 5px;
 }
 
-.sectionBulletList {
+.aboutBulletList {
   -webkit-column-count: 2;
           column-count: 2;
   -ms-grid-column: 1;
@@ -178,7 +183,7 @@ a:hover {
   grid-column-end: 2;
 }
 
-.sectionHeader {
+.aboutHeaderSlot {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -186,7 +191,7 @@ a:hover {
   margin-top: auto;
 }
 
-.profileImg {
+.aboutProfileImg {
   -ms-grid-column: 2;
       grid-column-start: 2;
   width: 50%;
@@ -234,7 +239,7 @@ a:hover {
   border: 1px solid #000203;
   height: 100vh;
   position: absolute;
-  left: 50px;
+  left: 40px;
   margin-top: 5px;
   bottom: 0px;
   top: 0px;
@@ -246,18 +251,18 @@ a:hover {
 .headerHorizontalLine {
   width: 90%;
   margin-top: 36px;
-  margin-left: 80px;
+  margin-left: 68px;
   border: 1px solid #000203;
   position: absolute;
 }
 
 .socialContainer {
-  width: 16px;
+  width: 10px;
   height: 285px;
   position: absolute;
-  left: 18px;
+  left: 9px;
   font-size: 18px;
-  bottom: 25px;
+  bottom: 30px;
   line-height: 60px;
   padding-left: 15px;
   padding-right: 15px;
@@ -274,7 +279,7 @@ a:hover {
   z-index: 1;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 865px) {
   .socialContainer {
     display: none;
   }
@@ -288,15 +293,49 @@ a:hover {
     display: inline;
   }
   .headerHorizontalLine {
-    width: 80%;
-    margin-top: 36px;
-    margin-left: 80px;
+    width: 85%;
+    margin-left: 75px;
     border: 1px solid #000203;
     position: absolute;
   }
   .margin20percent {
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .verticalLine-Left {
+    display: none;
+  }
+  body {
+    text-align: center;
+  }
+  section {
+    padding-top: 50px;
+    height: 100vh;
+  }
+  .grid-container {
+    display: inline-block;
+  }
+  .sectionDescriptionText {
+    text-align: left;
+  }
+  .aboutProfilePic {
+    text-align: center;
+    border-radius: 50%;
+  }
+  #about p {
+    text-align: left;
+  }
+  #about ul {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .headerHorizontalLine {
+    width: 80%;
+    margin-left: 75px;
+    border: 1px solid #000203;
+    position: absolute;
   }
 }
 
