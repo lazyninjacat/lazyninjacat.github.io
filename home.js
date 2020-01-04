@@ -39,13 +39,13 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#nav-icon3").click(function() {
     $(this).toggleClass("open");
-    $(".menu").slideToggle("slow");
+    $(".menu").slideToggle("fast");
   });
 });
 
 $(document).ready(function() {
   $(".menu").click(function() {
-    $("#nav-icon3").toggleClass("open");
-    $(".menu").slideToggle("slow");
+    $(this).toggleClass("open");
+    $(".menu").slideToggle("fast");
   });
 });
