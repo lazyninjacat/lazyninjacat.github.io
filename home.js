@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $(".menu").click(function() {
-    $(this).toggleClass("open");
+    $("#nav-icon3").toggleClass("open");
     $(".menu").slideToggle("fast");
   });
 });

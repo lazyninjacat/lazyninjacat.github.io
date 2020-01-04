@@ -271,8 +271,9 @@ a:hover {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 1;
+  padding-top: 5px;
 }
 
 .card {
@@ -299,8 +300,8 @@ a:hover {
 }
 
 #nav-icon3 {
-  width: 25px;
-  height: 37px;
+  width: 34px;
+  height: 31px;
   position: relative;
   margin: 0px auto;
   -webkit-transform: rotate(0deg);
@@ -434,6 +435,7 @@ a:hover {
   }
   header {
     background-color: rgba(0, 0, 0, 0.8);
+    height: 60px;
   }
   h1 {
     font-size: 40px;
