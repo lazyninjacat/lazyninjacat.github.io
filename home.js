@@ -49,27 +49,3 @@ $(document).ready(function() {
     $(".menu").slideToggle("fast");
   });
 });
-
-// window.onscroll = function() {
-//   hideHeaderOnScrollDown();
-// };
-
-// function hideHeaderOnScrollDown() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementById("header").className = "slideUp";
-//   } else if(document.documentElement.scrollTo  {
-//     document.getElementById("header").className = "slideDown";
-//   }
-// }
-
-var position = $(window).scrollTop();
-
-// should start at 0
-
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-  if (scroll > position) {
-    document.getElementById("header").slideToggle("fast");
-
-  position = scroll;
-});
