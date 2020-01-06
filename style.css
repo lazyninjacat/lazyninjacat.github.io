@@ -130,7 +130,7 @@ button:focus {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .margin20percent {
@@ -138,7 +138,7 @@ button:focus {
   margin-right: 15vw;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  padding-top: 130px;
+  padding-top: 20vh;
   z-index: 0;
 }
 
@@ -151,7 +151,6 @@ button:focus {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  padding: 0px;
 }
 
 .nameHeading {
@@ -161,10 +160,7 @@ button:focus {
 
 .aboutDescriptionText {
   -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-column: 1;
   padding: 5px;
 }
 
@@ -183,9 +179,7 @@ button:focus {
 }
 
 .aboutProfileImg {
-  width: 70%;
-  border-radius: 10%;
-  margin-top: 20%;
+  width: 300px;
 }
 
 .aboutProfileImgSlot {
@@ -195,6 +189,7 @@ button:focus {
   grid-row: 1;
   margin-top: 0px;
   text-align: center;
+  padding: 0px;
 }
 
 .aboutHorizontalLine {
@@ -282,14 +277,15 @@ button:focus {
 }
 
 .card {
-  background: #3f247c;
-  border-radius: 5%;
+  background: #392074;
+  border-radius: 1%;
   display: inline-block;
-  height: 300px;
+  height: 90%;
   position: relative;
-  width: 300px;
-  margin: 0px;
-  padding: 10px;
+  margin: 10%;
+  padding: 1%;
+  display: -ms-grid;
+  display: grid;
 }
 
 .card-1 {
@@ -304,19 +300,52 @@ button:focus {
           box-shadow: 0 14px 28px rgba(62, 65, 231, 0.25), 0 10px 10px rgba(72, 41, 211, 0.22);
 }
 
+.cardTitle {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.cardDescription {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.cardLinks {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.cardPic1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.cardPic2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
 #mlu {
   -ms-grid-column: 1;
   grid-column: 1;
 }
 
 #inferno {
-  -ms-grid-column: 2;
-  grid-column: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 #starman {
-  -ms-grid-column: 3;
-  grid-column: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
 #nav-icon3 {
@@ -394,19 +423,22 @@ button:focus {
 }
 
 #portfolio {
-  display: block;
+  display: flexbox;
 }
 
-#portfolio .card-1 {
-  margin: 25px;
+#portfolio .aboutHorizontalLine {
+  width: 100%;
 }
 
 #home {
   height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #home h1 {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 #home h2 {
@@ -416,15 +448,32 @@ button:focus {
 }
 
 #home p {
-  margin-top: 30px;
+  width: 50%;
+  margin-top: 5vh;
 }
 
 #about {
   height: 100vh;
 }
 
+#about .aboutHorizontalLine {
+  width: 100%;
+}
+
+#about p {
+  width: 60%;
+}
+
 #contact {
   height: 100vh;
+}
+
+#contact .aboutHorizontalLine {
+  width: 100%;
+}
+
+#contact p {
+  width: 50%;
 }
 
 @-webkit-keyframes moveGradient {
@@ -506,11 +555,7 @@ button:focus {
   .card {
     background: #3f247c;
     border-radius: 2%;
-    display: block;
-    height: 200px;
     position: relative;
-    width: 85%;
-    margin-left: 5%;
     padding: 15px;
   }
   .socialContainer {
