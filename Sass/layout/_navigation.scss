@@ -1,0 +1,164 @@
+@media only screen and (max-width: $breakpoint) {
+  .menu {
+    display: block;
+  }
+}
+
+#nav-icon3 {
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+
+  margin-top: 9px;
+  float: right;
+  display: none;
+}
+
+#nav-icon3 span {
+  position: absolute;
+  height: 1px;
+  border-radius: 10%;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+  width: 80%;
+  left: 20%;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 19px;
+  width: 80%;
+  left: 20%;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 38px;
+  width: 80%;
+  left: 20%;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+  display: none;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+  display: none;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  40%,
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.menu {
+  z-index: 3;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 85px;
+  display: none;
+
+  code {
+    font-size: 20px;
+  }
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  display: block;
+  padding: 25px;
+  border-bottom: 1px solid;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: $lightgreygreen;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+.glyphicon-home {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  span {
+    padding-left: 0px;
+  }
+
+  #span1 {
+    padding-right: 0px;
+  }
+  #span2 {
+    padding-right: 0px;
+  }
+
+  #nav-icon3 {
+    display: inline;
+  }
+}

@@ -1,0 +1,93 @@
+header {
+  height: 70px;
+  width: 100%;
+  z-index: 1;
+  background-color: $menu_background;
+  vertical-align: middle;
+  position: absolute;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.headerMobileMenuIcon {
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  display: none;
+  margin-top: 8px;
+  margin-right: 7px;
+}
+
+.headerLogo {
+  float: left;
+  font-size: 45px;
+  margin-left: 2px;
+  margin-top: 9px;
+  padding: 0px;
+  font-family: PT Sans;
+
+  color: $darkgreygreen;
+  vertical-align: middle;
+
+  a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.headerMenu {
+  float: right;
+  font-family: "Courier New", Courier, monospace;
+  color: $lightgreygreen;
+  margin-top: 10px;
+  margin-right: 2px;
+
+  li {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+  }
+}
+
+.margin0percent {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  header {
+    background-color: $menu_background;
+    height: 60px;
+    width: 90%;
+    margin-left: 4.5vw;
+    margin-right: 15vw;
+  }
+
+  .headerMenu {
+    display: none;
+  }
+
+  .headerLogo {
+    float: left;
+    font-size: 35px;
+    margin-left: 2px;
+    margin-top: 5px;
+    padding: 0px;
+    font-family: PT Sans;
+
+    color: $darkgreygreen;
+    vertical-align: middle;
+
+    a {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}

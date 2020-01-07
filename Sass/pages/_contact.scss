@@ -1,0 +1,30 @@
+#contact {
+  height: 100vh;
+  .aboutHorizontalLine {
+    width: 100%;
+  }
+
+  margin-left: 25vw;
+  margin-right: 25vw;
+  width: 50%;
+
+  button {
+  }
+}
+
+.contactDescription {
+  margin-right: 5%;
+  margin-left: 1%;
+  grid-column: 1;
+}
+
+.contactButtonSlot {
+  text-align: center;
+  margin-right: 1%;
+  padding-top: 4%;
+  width: 150%;
+}
+
+.contactContainer {
+  display: inline-flex;
+}

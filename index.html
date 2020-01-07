@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie-edge" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./Sass/main.css" />
       
 
 
@@ -37,7 +37,7 @@
             </div>
 
             <div class="menu">
-                <ul >
+                <ul>
                     <li class="gradient-border"><a href='#about'><code>01.</code> About</a></li>
                     <li class="gradient-border"><a href='#portfolio'><code>02.</code> Portfolio</a></li>
                     <li class="gradient-border"><a href='#contact'><code>03.</code> Contact</a></li>
@@ -96,7 +96,7 @@
                 <h2><code>01.</code> About Me</h2>                 
                 <p class="aboutHorizontalLine gradient-border"></p>
             </div>     
-            <div class="grid-container">
+            <div class="aboutContentContainer">
                 <div class="aboutDescriptionText">
                     <p>Hello! I'm Matthew, a software developer based in Victoria, BC who enjoys building games, apps, and things that live on the internet. My projects combine intuitive, good-looking user interfaces with efficient and modern backends.</p>
                     <p>Here are a few technologies I've been working with recently:</p>
@@ -111,6 +111,9 @@
                         <li>C#</li>
                         <li>Unity 3D</li>
                         <li>Gatsby.js</li>
+                        <li>php</li>
+                        <li>npm</li>
+                        <li>XAMPP</li>
                     </ul>
                 </div>
                 <div class="aboutProfileImgSlot">
@@ -152,7 +155,7 @@
         <section class="margin20percent" id="portfolio">
                 <h2 ><code>02.</code> Some Things I've Built</h2 >          
                 <p class="aboutHorizontalLine gradient-border"></p>
-                <div class="grid-container">
+                <div class="portfolioCardContainer">
                     <div class="card card-1" id="mlu">
                         <h3 class="cardTitle">MyLevelUP</h3>
                         <p class="cardDescription">A personalized learning app for non-verbal kids on the autsim spectrum</p>
@@ -161,7 +164,8 @@
                             <p>Github Link</p>
                             <a href="https://mylevelup.app">www.mylevelup.app</a>
                         </div>
-                        <div class="cardPic1"> 123
+                        <div class="cardPic1"> 
+                            <img src="./Static/mlu_banner.png">
 
                         </div>
                         <div class="cardPic2"> 123
@@ -218,9 +222,23 @@
         <section class="margin20percent" id="contact">              
             <h2><code>03.</code> Get In Touch</h1>
                 <p class="aboutHorizontalLine gradient-border"></p>          
-
-            <p>I'm currently seeking new opportunities to work with creative, passionate people on cool projects. If you're looking for a developer/designer and you think I might be a good fit, get in touch!</p>
-            <a href="./static/stars.jpg"><button class="gradient-border">Get In Touch</button></a>            
+            <div class="contactContainer">
+                <p class="contactDescription">I'm currently seeking new opportunities to work with creative, passionate people on cool projects. If you're looking for a developer/designer and you think I might be a good fit, get in touch!</p>
+                
+                <div class="contactButtonSlot">
+                    <a href="./static/stars.jpg"><button class="gradient-border">Get In Touch</button></a>    
+                </div>
+            </div>   
+            <div>
+                <p>SEND EMAIL</p>
+                <form class="contact-form" action="contactform.php" method="post">
+                    <input type="text" name="name" placeholder="Full name">
+                    <input type="text" name="mail" placeholder="Your e-mail">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit" name="submit">SEND MAIL</button>
+                </form>
+            </div>     
         </section>
 
  

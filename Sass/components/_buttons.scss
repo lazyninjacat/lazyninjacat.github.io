@@ -1,0 +1,18 @@
+button {
+  background-color: inherit;
+  color: $lightgreygreen;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding: 20px;
+  border-width: 0px;
+}
+
+button:hover {
+  color: $beige;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}

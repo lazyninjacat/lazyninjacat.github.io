@@ -1,0 +1,27 @@
+.nameHeading {
+  color: $beige;
+  font-style: strong;
+}
+
+.titleDescriptionText {
+  margin-right: 0%;
+}
+
+#home {
+  height: 100vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-family: PT Sans;
+    color: $darkgreygreen;
+  }
+  p {
+    width: 50%;
+    margin-top: 5vh;
+  }
+}

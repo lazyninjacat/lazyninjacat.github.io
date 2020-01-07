@@ -1,0 +1,10 @@
+.grid-container {
+  display: grid;
+  grid-gap: 0px;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .grid-container {
+    display: inline-block;
+  }
+}

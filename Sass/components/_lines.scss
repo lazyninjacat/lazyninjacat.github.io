@@ -1,0 +1,35 @@
+.verticalLine-Left {
+  border: 1px solid $background;
+  height: 100vh;
+  position: absolute;
+  left: 40px;
+  margin-top: 10px;
+  bottom: 0px;
+  top: 0px;
+  padding-left: 1px;
+  padding-right: 1px;
+  background-color: $background;
+}
+
+.headerHorizontalLine {
+  width: 90%;
+  margin-top: 36px;
+  margin-left: 68px;
+  border: 1px solid $background;
+  position: absolute;
+}
+
+#socialLine {
+  bottom: 0%;
+  top: 100%;
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .headerHorizontalLine {
+    display: none;
+  }
+
+  .verticalLine-Left {
+    display: none;
+  }
+}

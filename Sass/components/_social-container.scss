@@ -1,0 +1,21 @@
+.socialContainer {
+  width: 10px;
+  height: 285px;
+  position: absolute;
+  left: 9px;
+  font-size: 18px;
+  bottom: 30px;
+  line-height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  a i {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .socialContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+#mlu {
+  grid-column: 1;
+}
+
+#inferno {
+  grid-column: 2;
+}
+
+#starman {
+  grid-column: 1;
+}
+
+#portfolio {
+  .aboutHorizontalLine {
+    width: 100%;
+  }
+
+  margin-left: 15vw;
+  margin-right: 15vw;
+  width: 70%;
+}
+
+.portfolioCardContainer {
+  display: inline-block;
+}
