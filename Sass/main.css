@@ -296,8 +296,12 @@ button:focus {
 .aboutBulletList {
   -webkit-column-count: 2;
           column-count: 2;
-  -ms-grid-column: 1;
-  grid-column: 1;
+  padding: 10px;
+}
+
+.aboutBulletList p {
+  text-decoration: underline;
+  margin-top: 0px;
 }
 
 .aboutProfileImg {
@@ -328,9 +332,6 @@ button:focus {
 #about {
   height: 100vh;
   display: inline-block;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 #about .aboutHorizontalLine {

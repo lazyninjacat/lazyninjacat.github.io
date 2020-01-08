@@ -5,7 +5,11 @@
 
 .aboutBulletList {
   column-count: 2;
-  grid-column: 1;
+  padding: 10px;
+  p {
+    text-decoration: underline;
+    margin-top: 0px;
+  }
 }
 
 .aboutProfileImg {
@@ -37,9 +41,6 @@
     width: 100%;
   }
   display: inline-block;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
 }
 
 @media only screen and (max-width: $breakpoint) {
