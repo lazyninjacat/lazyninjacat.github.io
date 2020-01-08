@@ -124,6 +124,7 @@
                         <ul>
                             <li>Unity3D</li>
                             <li>Git</li>
+                            <li>Trello</li>
                             <li>Netlify</li>
                             <li>Wordpress</li>    
                         </ul>
@@ -139,6 +140,7 @@
                 <div class="aboutProfileImgSlot">
                     <img class="aboutProfileImg " src="./Static/mrprofilepic.JPG"/>                
                 </div>
+                
             </div>
         </section>
 
@@ -240,28 +242,35 @@
 
 
         <section class="margin20percent" id="contact">              
-            <h2><code>03.</code> Get In Touch</h1>
-                <p class="aboutHorizontalLine gradient-border"></p>          
-            <div class="contactContainer">
-                <p class="contactDescription">I'm currently seeking new opportunities to work with creative, passionate people on cool projects. If you're looking for a developer/designer and you think I might be a good fit, get in touch!</p>
-                
-                <div class="contactButtonSlot">
-                    <a href="./static/stars.jpg"><button class="gradient-border">Get In Touch</button></a>    
-                </div>
-            </div>   
+            <h2><code>03.</code> What's Next?</h1>
+                <p class="aboutHorizontalLine gradient-border"></p> <br>         
             <div>
-                <p>SEND EMAIL</p>
-                <form class="contact-form" action="contactform.php" method="post">
-                    <input type="text" name="name" placeholder="Full name">
-                    <input type="text" name="mail" placeholder="Your e-mail">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit" name="submit">SEND MAIL</button>
-                </form>
-            </div>     
+                <p class="contactDescription">I'm currently seeking new opportunities to work with creative, passionate people on cool projects. If you're looking for a developer/designer, get in touch!</p>              
+            </div>   
+            <br>
+           <div class="contact-container">
+            <form name="contact" action="" method="post" data-netlify="true">
+                <h3>Get in Touch</h3>
+                <h4>Contact me today, and I'll reply with in 24 hours!</h4>
+                <fieldset>
+                  <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>              
+                <fieldset>
+                  <textarea name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                  <button class="gradient-border" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </div>
+
+            
+            
         </section>
 
- 
+      
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

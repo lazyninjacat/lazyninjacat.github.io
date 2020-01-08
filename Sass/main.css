@@ -83,6 +83,7 @@ button:focus {
 
 @media only screen and (max-width: 800px) {
   .card {
+    display: block;
     background: #3f247c;
     border-radius: 1%;
     position: relative;
@@ -198,6 +199,109 @@ button:focus {
   }
 }
 
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#contact h3 {
+  color: lightgreen;
+  display: block;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  border: none;
+  background: #000203;
+  color: lightgreen;
+  margin: 0 0 5px;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  -webkit-transition: background 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  border: 4px solid lightgreen;
+}
+
+#contact button[type="submit"]:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
 .nameHeading {
   color: #d3d0cb;
   font-style: strong;
@@ -228,11 +332,29 @@ button:focus {
   margin-top: 5vh;
 }
 
+@media only screen and (max-width: 800px) {
+  #home {
+    display: block;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 7vh;
+  }
+}
+
 #contact {
   height: 100vh;
-  margin-left: 25vw;
-  margin-right: 25vw;
-  width: 50%;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  width: 70%;
+}
+
+#contact .aboutHorizontalLine {
+  width: 100%;
+}
+
+#contact p {
+  width: 60%;
+  margin: 0px;
 }
 
 #contact .aboutHorizontalLine {
@@ -240,23 +362,25 @@ button:focus {
 }
 
 .contactDescription {
-  margin-right: 5%;
-  margin-left: 1%;
-  -ms-grid-column: 1;
-  grid-column: 1;
-}
-
-.contactButtonSlot {
-  text-align: center;
   margin-right: 1%;
-  padding-top: 4%;
-  width: 150%;
+  margin-left: 1%;
 }
 
-.contactContainer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+@media only screen and (max-width: 800px) {
+  #contact {
+    display: block;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 8vw;
+  }
+  #contact p {
+    width: 100%;
+  }
+  #contact .aboutHorizontalLine {
+    margin-top: 0px;
+    left: 0%;
+    width: 100%;
+  }
 }
 
 #mlu {
@@ -286,6 +410,15 @@ button:focus {
 
 .portfolioCardContainer {
   display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
+  #portfolio {
+    display: inline-block;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 8vh;
+  }
 }
 
 .aboutDescriptionText {
@@ -361,7 +494,7 @@ button:focus {
     border-radius: 50%;
   }
   #about {
-    display: inline-block;
+    display: block;
   }
   #about .aboutHorizontalLine {
     margin-top: 0px;
@@ -374,6 +507,15 @@ button:focus {
   }
   #about ul {
     text-align: left;
+  }
+  #about .aboutContentContainer {
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #about .aboutBulletList {
+    -webkit-column-count: 2;
+            column-count: 2;
   }
 }
 

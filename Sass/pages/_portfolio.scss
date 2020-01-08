@@ -23,3 +23,12 @@
 .portfolioCardContainer {
   display: inline-block;
 }
+
+@media only screen and (max-width: $breakpoint) {
+  #portfolio {
+    display: inline-block;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 8vh;
+  }
+}
