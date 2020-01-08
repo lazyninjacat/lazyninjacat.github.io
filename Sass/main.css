@@ -302,6 +302,24 @@ button:focus {
 .aboutBulletList p {
   text-decoration: underline;
   margin-top: 0px;
+  color: lightgreen;
+}
+
+.aboutBulletList ul {
+  list-style: none;
+}
+
+.aboutBulletList li {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.aboutBulletList ul li::before {
+  content: "\1F892";
+  color: lightgreen;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .aboutProfileImg {
@@ -330,7 +348,6 @@ button:focus {
 }
 
 #about {
-  height: 100vh;
   display: inline-block;
 }
 
