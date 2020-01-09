@@ -1,4 +1,4 @@
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $largescreen) {
   .menu {
     display: block;
   }
@@ -146,7 +146,7 @@
   margin: 0 auto;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $largescreen) {
   span {
     padding-left: 0px;
   }

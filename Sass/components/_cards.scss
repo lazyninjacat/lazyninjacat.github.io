@@ -47,7 +47,7 @@
   grid-row: 2;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $largescreen) {
   .card {
     display: block;
     background: rgb(63, 36, 124);

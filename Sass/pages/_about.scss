@@ -60,7 +60,7 @@
   display: inline-block;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $largescreen) {
   .aboutProfilePic {
     text-align: center;
     border-radius: 50%;

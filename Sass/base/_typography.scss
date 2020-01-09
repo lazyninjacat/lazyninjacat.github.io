@@ -37,7 +37,7 @@ p {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $largescreen) {
   body {
     text-align: left;
   }

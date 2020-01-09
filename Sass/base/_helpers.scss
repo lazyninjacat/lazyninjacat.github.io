@@ -20,7 +20,7 @@ section {
   z-index: 0;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $largescreen) {
   section {
     padding-top: 50px;
     height: 100%;

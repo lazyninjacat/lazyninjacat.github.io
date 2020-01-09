@@ -24,7 +24,7 @@
   top: 100%;
 }
 
-@media only screen and (max-width: $breakpoint) {
+@media only screen and (max-width: $largescreen) {
   .headerHorizontalLine {
     display: none;
   }
