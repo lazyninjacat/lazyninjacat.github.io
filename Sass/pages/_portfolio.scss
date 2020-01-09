@@ -11,13 +11,13 @@
 }
 
 #portfolio {
+  height: 100vh;
+  padding-top: 15vh;
   .aboutHorizontalLine {
     width: 100%;
   }
 
-  margin-left: 15vw;
-  margin-right: 15vw;
-  width: 70%;
+  width: 100%;
 }
 
 .portfolioCardContainer {

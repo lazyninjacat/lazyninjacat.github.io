@@ -92,7 +92,7 @@ button:focus {
 }
 
 .gradient-border {
-  --border-width: 2px;
+  --border-width: 1px;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -165,23 +165,20 @@ button:focus {
 }
 
 .verticalLine-Left {
-  border: 1px solid #000203;
+  border: 1px solid clear;
   height: 100vh;
   position: absolute;
-  left: 40px;
+  left: 42px;
   margin-top: 10px;
   bottom: 0px;
   top: 0px;
-  padding-left: 1px;
-  padding-right: 1px;
-  background-color: #000203;
 }
 
 .headerHorizontalLine {
   width: 90%;
   margin-top: 36px;
   margin-left: 68px;
-  border: 1px solid #000203;
+  border: 1px solid clear;
   position: absolute;
 }
 
@@ -190,7 +187,7 @@ button:focus {
   top: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   .headerHorizontalLine {
     display: none;
   }
@@ -313,8 +310,9 @@ fieldset {
 
 #home {
   height: 100vh;
-  margin-left: 25vw;
-  margin-right: 25vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding-top: 15vh;
 }
 
 #home h1 {
@@ -343,9 +341,8 @@ fieldset {
 
 #contact {
   height: 100vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  width: 70%;
+  width: 100%;
+  padding-top: 15vh;
 }
 
 #contact .aboutHorizontalLine {
@@ -399,9 +396,9 @@ fieldset {
 }
 
 #portfolio {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  width: 70%;
+  height: 100vh;
+  padding-top: 15vh;
+  width: 100%;
 }
 
 #portfolio .aboutHorizontalLine {
@@ -422,19 +419,12 @@ fieldset {
 }
 
 .aboutDescriptionText {
-  padding: 5px;
+  padding: 0px;
   width: 100%;
-}
-
-.aboutBulletList {
-  -webkit-column-count: 2;
-          column-count: 2;
-  padding: 10px;
 }
 
 .aboutBulletList p {
   text-decoration: underline;
-  margin-top: 0px;
   color: lightgreen;
 }
 
@@ -444,6 +434,7 @@ fieldset {
 
 .aboutBulletList li {
   font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
 }
 
 .aboutBulletList ul li::before {
@@ -452,7 +443,7 @@ fieldset {
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin-left: -2.2em;
 }
 
 .aboutProfileImg {
@@ -460,7 +451,7 @@ fieldset {
 }
 
 .aboutProfileImgSlot {
-  text-align: center;
+  text-align: right;
   padding-top: 25px;
   width: 100%;
   float: right;
@@ -473,14 +464,26 @@ fieldset {
 }
 
 .aboutContentContainer {
+  display: inline-block;
+}
+
+.aboutBulletListContainer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: 5%;
-  margin-right: 0%;
+}
+
+.aboutFlexContainer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 #about {
+  height: 100vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding-top: 15vh;
   display: inline-block;
 }
 
@@ -488,7 +491,7 @@ fieldset {
   width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   .aboutProfilePic {
     text-align: center;
     border-radius: 50%;
@@ -538,6 +541,7 @@ body {
   font-family: Quicksand;
   font-size: 17px;
   color: #9fb1bc;
+  display: block;
 }
 
 h1 {
@@ -597,14 +601,7 @@ p {
 section {
   position: relative;
   z-index: 0;
-}
-
-.margin20percent {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-top: 5vh;
-  padding-top: 20vh;
-  z-index: 0;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -739,7 +736,7 @@ header {
   margin-right: 0px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   header {
     background-color: rgba(0, 0, 0, 0.8);
     height: 60px;
@@ -768,7 +765,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: mediumscreen) {
   .menu {
     display: block;
   }
@@ -920,7 +917,7 @@ header {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   span {
     padding-left: 0px;
   }

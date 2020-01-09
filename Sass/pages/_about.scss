@@ -1,14 +1,11 @@
 .aboutDescriptionText {
-  padding: 5px;
+  padding: 0px;
   width: 100%;
 }
 
 .aboutBulletList {
-  column-count: 2;
-  padding: 10px;
   p {
     text-decoration: underline;
-    margin-top: 0px;
     color: $code;
   }
   ul {
@@ -17,6 +14,7 @@
 
   li {
     font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
   }
 
   ul li::before {
@@ -25,7 +23,7 @@
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+    margin-left: -2.2em;
   }
 }
 
@@ -34,7 +32,7 @@
 }
 
 .aboutProfileImgSlot {
-  text-align: center;
+  text-align: right;
   padding-top: 25px;
   width: 100%;
   float: right;
@@ -47,20 +45,30 @@
 }
 
 .aboutContentContainer {
+  display: inline-block;
+}
+
+.aboutBulletListContainer {
   display: inline-flex;
-  margin-left: 5%;
-  margin-right: 0%;
+}
+
+.aboutFlexContainer {
+  display: inline-flex;
 }
 
 #about {
-  //height: 100vh;
+  height: 100vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding-top: 15vh;
+
   .aboutHorizontalLine {
     width: 100%;
   }
   display: inline-block;
 }
 
-@media only screen and (max-width: $largescreen) {
+@media only screen and (max-width: $mediumscreen) {
   .aboutProfilePic {
     text-align: center;
     border-radius: 50%;
