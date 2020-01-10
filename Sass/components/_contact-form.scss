@@ -1,8 +1,7 @@
 .contact-container {
   max-width: 600px;
   width: 100%;
-  margin-left: 44%;
-  margin-right: 0px;
+  float: right;
 }
 
 #contact h3 {
@@ -31,7 +30,7 @@ fieldset {
 #contact input[type="tel"],
 #contact input[type="url"],
 #contact textarea {
-  width: 100%;
+  width: 80%;
   border: 1px solid #ccc;
   background: #fff;
   margin: 0 0 5px;
@@ -61,7 +60,6 @@ fieldset {
   background: $background;
   color: $code;
   margin-top: 10px;
-  margin-right: -20px;
   padding-top: 20px;
   padding-right: 50px;
   padding-bottom: 20px;
