@@ -12,11 +12,14 @@
   }
   ul {
     list-style: none;
+    column-count: 3;
+    column-gap: 100px;
   }
 
   li {
     font-family: "Courier New", Courier, monospace;
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 1.5em;
   }
 
   ul li::before {
@@ -25,9 +28,9 @@
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -2.1em;
+    margin-left: -3em;
   }
-  margin-right: 10px;
+  margin-left: 20px;
 }
 
 .aboutProfileImg {
