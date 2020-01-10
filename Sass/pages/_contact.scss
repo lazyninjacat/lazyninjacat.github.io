@@ -1,7 +1,9 @@
 #contact {
   height: 100vh;
-
-  width: 100%;
+  text-align: right;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  width: 60%;
   padding-top: 15vh;
   .aboutHorizontalLine {
     width: 100%;
@@ -9,11 +11,27 @@
 
   p {
     width: 60%;
-    margin: 0px;
+    padding-left: 37%;
   }
 
-  .aboutHorizontalLine {
+  h2 {
     width: 100%;
+    text-align: right;
+    line-height: 0px;
+    margin: 20px 0 20px;
+    height: 0px;
+    border-bottom: 0px solid white;
+
+    code {
+      font-size: inherit;
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+
+  h2 span {
+    background: $background;
+    padding-left: 10px;
+    margin-right: -1px;
   }
 }
 

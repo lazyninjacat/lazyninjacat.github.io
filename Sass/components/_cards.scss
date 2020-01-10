@@ -1,15 +1,14 @@
 .card {
   background: rgb(57, 32, 116);
-  border-radius: 1%;
-  display: inline-block;
-  height: 90%;
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 1%;
+  border-radius: 3%;
   display: grid;
+  height: 350px;
+  width: 92%;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  padding: 4%;
 }
 
 .card-1 {

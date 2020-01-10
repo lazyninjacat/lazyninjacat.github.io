@@ -1,5 +1,7 @@
 .aboutDescriptionText {
-  padding: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+
   width: 100%;
 }
 
@@ -23,12 +25,14 @@
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -2.2em;
+    margin-left: -2.1em;
   }
+  margin-right: 10px;
 }
 
 .aboutProfileImg {
   width: 70%;
+  padding-right: 20px;
 }
 
 .aboutProfileImgSlot {
@@ -50,6 +54,7 @@
 
 .aboutBulletListContainer {
   display: inline-flex;
+  padding-left: 20px;
 }
 
 .aboutFlexContainer {
@@ -58,12 +63,29 @@
 
 #about {
   height: 100vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   padding-top: 15vh;
+  width: 60%;
 
-  .aboutHorizontalLine {
+  h2 {
     width: 100%;
+    text-align: left;
+    line-height: 0px;
+    margin: 20px 0 20px;
+    height: 0px;
+    border-bottom: 0px solid white;
+
+    code {
+      font-size: inherit;
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+
+  h2 span {
+    background: $background;
+    padding-right: 10px;
+    margin-left: -1px;
   }
   display: inline-block;
 }

@@ -23,17 +23,15 @@ button:focus {
 
 .card {
   background: #392074;
-  border-radius: 1%;
-  display: inline-block;
-  height: 90%;
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 1%;
+  border-radius: 3%;
   display: -ms-grid;
   display: grid;
+  height: 350px;
+  width: 92%;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 4%;
 }
 
 .card-1 {
@@ -169,7 +167,7 @@ button:focus {
   height: 100vh;
   position: absolute;
   left: 42px;
-  margin-top: 10px;
+  margin-top: 25px;
   bottom: 0px;
   top: 0px;
 }
@@ -199,7 +197,7 @@ button:focus {
 .contact-container {
   max-width: 600px;
   width: 100%;
-  margin-left: 0px;
+  margin-left: 44%;
   margin-right: 0px;
 }
 
@@ -257,7 +255,8 @@ fieldset {
   border: none;
   background: #000203;
   color: lightgreen;
-  margin: 0 0 5px;
+  margin-top: 10px;
+  margin-right: -20px;
   padding-top: 20px;
   padding-right: 50px;
   padding-bottom: 20px;
@@ -341,7 +340,10 @@ fieldset {
 
 #contact {
   height: 100vh;
-  width: 100%;
+  text-align: right;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  width: 60%;
   padding-top: 15vh;
 }
 
@@ -351,11 +353,27 @@ fieldset {
 
 #contact p {
   width: 60%;
-  margin: 0px;
+  padding-left: 37%;
 }
 
-#contact .aboutHorizontalLine {
+#contact h2 {
   width: 100%;
+  text-align: right;
+  line-height: 0px;
+  margin: 20px 0 20px;
+  height: 0px;
+  border-bottom: 0px solid white;
+}
+
+#contact h2 code {
+  font-size: inherit;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#contact h2 span {
+  background: #000203;
+  padding-left: 10px;
+  margin-right: -1px;
 }
 
 .contactDescription {
@@ -391,22 +409,41 @@ fieldset {
 }
 
 #starman {
-  -ms-grid-column: 1;
-  grid-column: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
 }
 
 #portfolio {
-  height: 100vh;
+  height: 100%;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  width: 60%;
   padding-top: 15vh;
-  width: 100%;
 }
 
-#portfolio .aboutHorizontalLine {
+#portfolio h2 {
   width: 100%;
+  text-align: center;
+  line-height: 0px;
+  margin: 20px 0 20px;
+  height: 0px;
+  border-bottom: 0px solid white;
+}
+
+#portfolio h2 code {
+  font-size: inherit;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#portfolio h2 span {
+  background: #000203;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .portfolioCardContainer {
   display: inline-block;
+  border: 1px solid green;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -419,8 +456,13 @@ fieldset {
 }
 
 .aboutDescriptionText {
-  padding: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
   width: 100%;
+}
+
+.aboutBulletList {
+  margin-right: 10px;
 }
 
 .aboutBulletList p {
@@ -443,11 +485,12 @@ fieldset {
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -2.2em;
+  margin-left: -2.1em;
 }
 
 .aboutProfileImg {
   width: 70%;
+  padding-right: 20px;
 }
 
 .aboutProfileImgSlot {
@@ -471,6 +514,7 @@ fieldset {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  padding-left: 20px;
 }
 
 .aboutFlexContainer {
@@ -481,14 +525,31 @@ fieldset {
 
 #about {
   height: 100vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
   padding-top: 15vh;
+  width: 60%;
   display: inline-block;
 }
 
-#about .aboutHorizontalLine {
+#about h2 {
   width: 100%;
+  text-align: left;
+  line-height: 0px;
+  margin: 20px 0 20px;
+  height: 0px;
+  border-bottom: 0px solid white;
+}
+
+#about h2 code {
+  font-size: inherit;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#about h2 span {
+  background: #000203;
+  padding-right: 10px;
+  margin-left: -1px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -670,7 +731,7 @@ section {
 }
 
 header {
-  height: 70px;
+  height: 60px;
   width: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
@@ -691,11 +752,11 @@ header {
 
 .headerLogo {
   float: left;
-  font-size: 45px;
+  font-size: 30px;
   margin-left: 2px;
-  margin-top: 9px;
+  margin-top: 19px;
   padding: 0px;
-  font-family: PT Sans;
+  font-family: "Courier New", Courier, monospace;
   color: #6e8898;
   vertical-align: middle;
 }

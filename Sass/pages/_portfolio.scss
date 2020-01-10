@@ -7,21 +7,40 @@
 }
 
 #starman {
-  grid-column: 1;
+  grid-column: 3;
 }
 
 #portfolio {
-  height: 100vh;
+  height: 100%;
+  margin-right: 15vw;
+  margin-left: 15vw;
+  width: 60%;
   padding-top: 15vh;
-  .aboutHorizontalLine {
+
+  h2 {
     width: 100%;
+    text-align: center;
+    line-height: 0px;
+    margin: 20px 0 20px;
+    height: 0px;
+    border-bottom: 0px solid white;
+
+    code {
+      font-size: inherit;
+      font-family: "Courier New", Courier, monospace;
+    }
   }
 
-  width: 100%;
+  h2 span {
+    background: $background;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .portfolioCardContainer {
   display: inline-block;
+  border: 1px solid green;
 }
 
 @media only screen and (max-width: $largescreen) {
