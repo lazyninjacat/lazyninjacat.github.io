@@ -443,7 +443,6 @@ fieldset {
 
 .portfolioCardContainer {
   display: inline-block;
-  border: 1px solid green;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -755,9 +754,10 @@ header {
   font-size: 30px;
   margin-left: 2px;
   margin-top: 19px;
-  padding: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
   font-family: "Courier New", Courier, monospace;
-  color: #6e8898;
+  color: lightgreen;
   vertical-align: middle;
 }
 
