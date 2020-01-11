@@ -93,14 +93,17 @@
   display: inline-block;
 }
 
-@media only screen and (max-width: $mediumscreen) {
+@media only screen and (max-width: $largescreen) {
   .aboutProfilePic {
     text-align: center;
     border-radius: 50%;
+    width: 100%;
   }
 
   #about {
     display: block;
+    margin-left: 10vw;
+    width: 80vw;
 
     .aboutHorizontalLine {
       margin-top: 0px;

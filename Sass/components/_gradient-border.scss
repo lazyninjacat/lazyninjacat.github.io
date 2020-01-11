@@ -17,6 +17,8 @@
     height: calc(100% + var(--border-width) * 2);
     background: linear-gradient(
       60deg,
+      $background,
+      $background,
       hsl(223, 45%, 16%),
       hsl(269, 45%, 24%),
       hsl(314, 45%, 32%),
@@ -29,7 +31,7 @@
     background-size: 500% 500%;
     background-position: 0 100%;
     border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 10s alternate infinite;
+    animation: moveGradient 20s alternate infinite;
   }
 }
 
@@ -44,7 +46,7 @@
     --border-width: 1px;
 
     &::after {
-      animation: moveGradient 15s alternate infinite;
+      animation: moveGradient 60s alternate infinite;
     }
   }
 }

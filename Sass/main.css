@@ -28,8 +28,8 @@ button:focus {
   width: 300px;
   position: relative;
   margin-top: 40px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding: 10px;
 }
 
@@ -73,11 +73,24 @@ button:focus {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 1370px) {
+  .cardContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .card {
     display: block;
     background: #3f247c;
-    border-radius: 1%;
+    border-radius: 3%;
     position: relative;
     padding: 15px;
   }
@@ -104,12 +117,12 @@ button:focus {
   z-index: -1;
   width: calc(100% + var(--border-width) * 2);
   height: calc(100% + var(--border-width) * 2);
-  background: linear-gradient(60deg, #16213b, #3c2259, #762d65, #94383a, #b19443, #90c15c, #72ca87, #90d5d4);
+  background: linear-gradient(60deg, #000203, #000203, #16213b, #3c2259, #762d65, #94383a, #b19443, #90c15c, #72ca87, #90d5d4);
   background-size: 500% 500%;
   background-position: 0 100%;
   border-radius: calc(2 * var(--border-width));
-  -webkit-animation: moveGradient 10s alternate infinite;
-          animation: moveGradient 10s alternate infinite;
+  -webkit-animation: moveGradient 20s alternate infinite;
+          animation: moveGradient 20s alternate infinite;
 }
 
 @-webkit-keyframes moveGradient {
@@ -124,13 +137,13 @@ button:focus {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
   .gradient-border {
     --border-width: 1px;
   }
   .gradient-border::after {
-    -webkit-animation: moveGradient 15s alternate infinite;
-            animation: moveGradient 15s alternate infinite;
+    -webkit-animation: moveGradient 60s alternate infinite;
+            animation: moveGradient 60s alternate infinite;
   }
 }
 
@@ -153,7 +166,7 @@ button:focus {
   padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   .socialContainer {
     display: none;
   }
@@ -324,12 +337,12 @@ fieldset {
   margin-top: 5vh;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
   #home {
     display: block;
-    margin-left: 5vw;
+    margin-left: 20vw;
     margin-right: 5vw;
-    padding-top: 7vh;
+    padding-top: 10vh;
   }
 }
 
@@ -372,24 +385,28 @@ fieldset {
 }
 
 .contactDescription {
-  margin-right: 1%;
-  margin-left: 1%;
+  background: #000203;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
   #contact {
     display: block;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-top: 8vw;
+    margin-right: 15vw;
+    padding-top: 10vw;
+    margin-left: 20vw;
+    width: 60vw;
   }
   #contact p {
-    width: 100%;
+    width: 50%;
   }
   #contact .aboutHorizontalLine {
     margin-top: 0px;
-    left: 0%;
     width: 100%;
+  }
+  .contactDescription {
+    background: #000203;
+    margin-right: 0px;
+    margin-left: 8vw;
   }
 }
 
@@ -412,7 +429,7 @@ fieldset {
   height: 100%;
   margin-right: 20vw;
   margin-left: 20vw;
-  width: 55%;
+  width: 60%;
   padding-top: 15vh;
 }
 
@@ -436,12 +453,12 @@ fieldset {
   padding-right: 10px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
   #portfolio {
     display: inline-block;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-top: 8vh;
+    padding-top: 15vh;
+    margin-left: 10vw;
+    width: 80vw;
   }
 }
 
@@ -547,13 +564,16 @@ fieldset {
   margin-left: -1px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1370px) {
   .aboutProfilePic {
     text-align: center;
     border-radius: 50%;
+    width: 100%;
   }
   #about {
     display: block;
+    margin-left: 10vw;
+    width: 80vw;
   }
   #about .aboutHorizontalLine {
     margin-top: 0px;
@@ -631,7 +651,7 @@ p {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
   body {
     text-align: left;
   }
@@ -659,7 +679,7 @@ section {
   display: inline-block;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
   section {
     padding-top: 50px;
     height: 100%;

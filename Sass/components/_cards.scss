@@ -5,8 +5,8 @@
   width: 300px;
   position: relative;
   margin-top: 40px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
 
   padding: 10px;
 }
@@ -45,11 +45,19 @@
   justify-content: space-between;
 }
 
+@media only screen and (max-width: $largescreen) {
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: $mediumscreen) {
   .card {
     display: block;
     background: rgb(63, 36, 124);
-    border-radius: 1%;
+    border-radius: 3%;
     position: relative;
     padding: 15px;
   }
