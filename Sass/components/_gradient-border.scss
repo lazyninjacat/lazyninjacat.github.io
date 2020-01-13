@@ -17,11 +17,11 @@
     height: calc(100% + var(--border-width) * 2);
     background: linear-gradient(
       60deg,
-      $background,
-      $background,
-      hsl(223, 45%, 16%),
+      #000,
+      hsl(222, 84%, 17%),
       hsl(269, 45%, 24%),
       hsl(314, 45%, 32%),
+      #000,
       hsl(359, 45%, 40%),
       hsl(44, 45%, 48%),
       hsl(89, 45%, 56%),
@@ -42,11 +42,10 @@
 }
 
 @media only screen and (max-width: $largescreen) {
-  .gradient-border {
-    --border-width: 1px;
-
-    &::after {
-      animation: moveGradient 60s alternate infinite;
-    }
-  }
+}
+@media only screen and (max-width: $mediumlargescreen) {
+}
+@media only screen and (max-width: $mediumscreen) {
+}
+@media only screen and (max-width: $smallscreen) {
 }

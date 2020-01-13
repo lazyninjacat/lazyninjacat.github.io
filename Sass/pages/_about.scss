@@ -19,11 +19,11 @@
   li {
     font-family: "Courier New", Courier, monospace;
     font-size: 18px;
-    line-height: 1.5em;
+    line-height: 2em;
   }
 
   ul li::before {
-    content: "\1F892";
+    content: "";
     color: $code;
     font-weight: bold;
     display: inline-block;
@@ -52,7 +52,7 @@
 }
 
 .aboutContentContainer {
-  display: inline-block;
+  display: block;
 }
 
 .aboutBulletListContainer {
@@ -66,8 +66,7 @@
 
 #about {
   height: 100vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  left: 20%;
   padding-top: 15vh;
   width: 60%;
 
@@ -94,16 +93,11 @@
 }
 
 @media only screen and (max-width: $largescreen) {
-  .aboutProfilePic {
-    text-align: center;
-    border-radius: 50%;
-    width: 100%;
-  }
-
   #about {
     display: block;
-    margin-left: 10vw;
-    width: 80vw;
+    width: 80%;
+    left: 10%;
+    height: 100%;
 
     .aboutHorizontalLine {
       margin-top: 0px;
@@ -121,12 +115,98 @@
 
     .aboutContentContainer {
       display: block;
-      margin-left: 0%;
-      margin-right: 0%;
     }
 
     .aboutBulletList {
       column-count: 1;
     }
   }
+}
+
+@media only screen and (max-width: $mediumlargescreen) {
+  #about {
+    display: block;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+
+    .aboutHorizontalLine {
+      margin-top: 0px;
+      left: 0%;
+      width: 100%;
+    }
+
+    p {
+      left: 0%;
+      text-align: left;
+      width: 90%;
+    }
+    ul {
+      text-align: left;
+      width: 100%;
+    }
+
+    ul li::before {
+      font-weight: bold;
+      display: inline;
+      width: 1em;
+      margin-left: -3em;
+    }
+
+    .aboutContentContainer {
+      display: block;
+    }
+
+    .aboutBulletList {
+      column-count: 1;
+    }
+
+    .aboutFlexContainer {
+      display: block;
+    }
+
+    .aboutProfileImg {
+      width: 60%;
+      padding: 10px;
+    }
+
+    .aboutProfileImgSlot {
+      text-align: center;
+      padding-top: 25px;
+      width: 100%;
+      float: right;
+    }
+  }
+}
+@media only screen and (max-width: $mediumscreen) {
+  #about {
+    display: block;
+    left: 5%;
+    width: 90%;
+
+    .aboutHorizontalLine {
+      margin-top: 0px;
+      left: 0%;
+      width: 100%;
+    }
+
+    p {
+      left: 3%;
+      text-align: left;
+      width: 90%;
+    }
+
+    .aboutBulletListContainer {
+      display: block;
+      padding-left: 20%;
+
+      ul {
+        list-style: none;
+        column-count: 2;
+        column-gap: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $smallscreen) {
 }

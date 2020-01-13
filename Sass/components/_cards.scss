@@ -53,6 +53,9 @@
   }
 }
 
+@media only screen and (max-width: $mediumlargescreen) {
+}
+
 @media only screen and (max-width: $mediumscreen) {
   .card {
     display: block;
@@ -60,5 +63,10 @@
     border-radius: 3%;
     position: relative;
     padding: 15px;
+    width: 70%;
+    height: 50%;
   }
+}
+
+@media only screen and (max-width: $smallscreen) {
 }

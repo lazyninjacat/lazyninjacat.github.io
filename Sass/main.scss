@@ -8,14 +8,6 @@
 // Vendors
 // @import 'vendors/jquery-ui';
 
-// Components
-@import "components/buttons";
-@import "components/cards";
-@import "components/gradient-border";
-@import "components/social-container";
-@import "components/lines";
-@import "components/contact-form";
-
 // Pages
 @import "pages/home";
 @import "pages/contact";
@@ -37,3 +29,11 @@
 
 //Themes
 // @import 'themes/theme';
+
+// Components
+@import "components/buttons";
+@import "components/cards";
+@import "components/gradient-border";
+@import "components/social-container";
+@import "components/lines";
+@import "components/contact-form";

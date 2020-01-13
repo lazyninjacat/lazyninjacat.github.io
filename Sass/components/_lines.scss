@@ -1,11 +1,10 @@
 .verticalLine-Left {
   border: 1px solid clear;
-  height: 100vh;
+  height: 40vh;
   position: absolute;
-  left: 42px;
-  margin-top: 25px;
+  left: 30px;
+  top: 70vh;
   bottom: 0px;
-  top: 0px;
 }
 
 .headerHorizontalLine {
@@ -14,11 +13,17 @@
   margin-left: 68px;
   border: 1px solid clear;
   position: absolute;
+  z-index: -1;
 }
 
 #socialLine {
   bottom: 0%;
   top: 100%;
+}
+
+@media only screen and (max-width: $largescreen) {
+}
+@media only screen and (max-width: $mediumlargescreen) {
 }
 
 @media only screen and (max-width: $mediumscreen) {
@@ -29,4 +34,7 @@
   .verticalLine-Left {
     display: none;
   }
+}
+
+@media only screen and (max-width: $smallscreen) {
 }

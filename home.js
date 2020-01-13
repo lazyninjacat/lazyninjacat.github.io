@@ -49,3 +49,7 @@ $(document).ready(function() {
     $(".menu").slideToggle("fast");
   });
 });
+
+$(document).ready(function() {
+  $(window).scrollTop(0);
+});
