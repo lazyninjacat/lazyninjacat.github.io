@@ -59,5 +59,15 @@
     left: 5%;
     width: 90%;
     padding-top: 10vh;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-family: PT Sans;
+      color: $darkgreygreen;
+    }
   }
 }
