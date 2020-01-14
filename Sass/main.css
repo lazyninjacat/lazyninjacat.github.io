@@ -68,6 +68,14 @@
     width: 90%;
     padding-top: 10vh;
   }
+  #home h1 {
+    font-size: 50px;
+  }
+  #home h2 {
+    font-size: 30px;
+    font-family: PT Sans;
+    color: #6e8898;
+  }
 }
 
 #contact {
@@ -355,7 +363,6 @@
   #about ul li::before {
     font-weight: bold;
     display: inline;
-    width: 1em;
     margin-left: -3em;
   }
   #about .aboutContentContainer {
@@ -399,6 +406,35 @@
   #about .aboutBulletListContainer {
     display: block;
     padding-left: 20%;
+  }
+  #about .aboutBulletListContainer ul {
+    list-style: none;
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #about {
+    display: block;
+    left: 5%;
+    width: 90%;
+  }
+  #about .aboutHorizontalLine {
+    margin-top: 0px;
+    left: 0%;
+    width: 100%;
+  }
+  #about p {
+    left: 0%;
+    text-align: left;
+    width: 90%;
+  }
+  #about .aboutBulletListContainer {
+    display: block;
+    padding-left: 15px;
   }
   #about .aboutBulletListContainer ul {
     list-style: none;

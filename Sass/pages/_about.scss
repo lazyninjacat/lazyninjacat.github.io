@@ -208,4 +208,32 @@
   }
 }
 @media only screen and (max-width: $smallscreen) {
+  #about {
+    display: block;
+    left: 5%;
+    width: 90%;
+
+    .aboutHorizontalLine {
+      margin-top: 0px;
+      left: 0%;
+      width: 100%;
+    }
+
+    p {
+      left: 0%;
+      text-align: left;
+      width: 90%;
+    }
+
+    .aboutBulletListContainer {
+      display: block;
+      padding-left: 15px;
+
+      ul {
+        list-style: none;
+        column-count: 2;
+        column-gap: 20px;
+      }
+    }
+  }
 }
