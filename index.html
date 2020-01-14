@@ -269,46 +269,32 @@
                     <p class="contactDescription">I'm currently seeking new opportunities to work with creative, passionate people on cool projects. If you're looking for a developer/designer, get in touch!</p>              
                 </div>   
                  <br>
-                <div class="contact-container">
-                    <!-- <form form-name="contact" method="post" netlify>
-                        <h3>Get in Touch</h3>
-                        <h4>Contact me today, and I'll reply with in 24 hours!</h4>
+                <div class="contact-container">     
+
+                    <h3>Get in Touch</h3>
+                    
+                    <h4>Contact me today, and I'll reply with in 24 hours!</h4>
+                    
+                    <form name="contact" method="POST" data-netlify="true">
+                        
                         <fieldset>
-                        <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                            <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus/> 
                         </fieldset>
+                        
                         <fieldset>
-                        <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
-                        </fieldset>              
-                        <fieldset>
-                        <textarea name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                            <input placeholder="Your email address" type="email" name="email" tabindex="2" required />
                         </fieldset>
+                        
                         <fieldset>
-                        <button class="gradient-border" name="submit" type="submit" id="contact-submit">Submit</button>
-                        </fieldset> -->
+                            <textarea  placeholder="Type your message Here...." name="message" tabindex="5" required></textarea>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <button  class="gradient-border" type="submit">Send</button>
+                        </fieldset>  
 
-
-
-                        <form name="contact" method="POST" data-netlify="true">
-                            <p>
-                              <label>Your Name: <input type="text" name="name" /></label>   
-                            </p>
-                            <p>
-                              <label>Your Email: <input type="email" name="email" /></label>
-                            </p>
-                            <p>
-                              <label>Your Role: <select name="role[]" multiple>
-                                <option value="leader">Leader</option>
-                                <option value="follower">Follower</option>
-                              </select></label>
-                            </p>
-                            <p>
-                              <label>Message: <textarea name="message"></textarea></label>
-                            </p>
-                            <p>
-                              <button type="submit">Send</button>
-                            </p>
-                          </form>
-                    </div>            
+                    </form>
+                </div>            
         </section>
 
         <footer>
