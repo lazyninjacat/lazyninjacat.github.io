@@ -1021,7 +1021,6 @@ button:focus {
 }
 
 .verticalLine-Left {
-  border: 1px solid clear;
   height: 40vh;
   position: absolute;
   left: 30px;
@@ -1033,7 +1032,6 @@ button:focus {
   width: 90%;
   margin-top: 36px;
   margin-left: 68px;
-  border: 1px solid clear;
   position: absolute;
   z-index: -1;
 }
@@ -1049,6 +1047,48 @@ button:focus {
   }
   .verticalLine-Left {
     display: none;
+  }
+}
+
+@media only screen and (max-height: 855px) {
+  .verticalLine-Left {
+    top: 65vh;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-height: 744px) {
+  .verticalLine-Left {
+    top: 60vh;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-height: 648px) {
+  .verticalLine-Left {
+    top: 55vh;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-height: 578px) {
+  .verticalLine-Left {
+    top: 50vh;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-height: 517px) {
+  .verticalLine-Left {
+    top: 45vh;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-height: 472px) {
+  .verticalLine-Left {
+    top: 40vh;
+    height: 600px;
   }
 }
 
