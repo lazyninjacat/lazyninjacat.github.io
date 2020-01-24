@@ -10,3 +10,5 @@ Deployed with Netlify, version control with Git through Github.
 Sass is organized according to the 7 folders 1 file rule, with main.scss importing all other .scss files.
 
 Javascript is all housed in one file - home.js
+
+Link: https://matthewriddett.com
