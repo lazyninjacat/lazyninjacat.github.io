@@ -612,6 +612,18 @@ header {
   margin-right: 7px;
 }
 
+.headerLogo-1 {
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 1px 1px 1px 1px rgba(32, 77, 226, 0.24);
+          box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 1px 1px 1px 1px rgba(32, 77, 226, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(1, 1, 1, 1);
+  transition: all 0.3s cubic-bezier(1, 1, 1, 1);
+}
+
+.headerLogo-1:hover {
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+          box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+}
+
 .headerLogo {
   float: left;
   font-size: 30px;
