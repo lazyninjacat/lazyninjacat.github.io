@@ -1,9 +1,8 @@
 header {
-  height: 60px;
+  height: 80px;
   width: 100%;
   z-index: 1;
   background-color: $menu_background;
-  vertical-align: middle;
   position: absolute;
   margin-left: 3px;
   margin-right: 3px;
@@ -38,8 +37,6 @@ header {
   padding-right: 2px;
   font-family: "Courier New", Courier, monospace;
   color: $code;
-
-  vertical-align: middle;
 
   a {
     padding-top: 5px;

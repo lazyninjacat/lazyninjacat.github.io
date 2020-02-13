@@ -593,11 +593,10 @@ section {
 }
 
 header {
-  height: 60px;
+  height: 80px;
   width: 100%;
   z-index: 1;
-  background-color: #040822;
-  vertical-align: middle;
+  background-color: #040822c0;
   position: absolute;
   margin-left: 3px;
   margin-right: 3px;
@@ -633,7 +632,6 @@ header {
   padding-right: 2px;
   font-family: "Courier New", Courier, monospace;
   color: lightgreen;
-  vertical-align: middle;
 }
 
 .headerLogo a {
@@ -667,7 +665,7 @@ header {
 
 @media only screen and (max-width: 900px) {
   header {
-    background-color: #040822;
+    background-color: #040822c0;
     height: 40px;
     width: 91%;
     left: 5%;
