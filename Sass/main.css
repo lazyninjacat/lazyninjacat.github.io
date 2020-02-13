@@ -613,8 +613,8 @@ header {
 }
 
 .headerLogo-1 {
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 1px 1px 1px 1px rgba(32, 77, 226, 0.24);
-          box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 1px 1px 1px 1px rgba(32, 77, 226, 0.24);
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(55, 17, 160, 0.12), 0px 0px 0px 0px rgba(32, 77, 226, 0.24);
+          box-shadow: 0px 0px 0px 0px rgba(55, 17, 160, 0.12), 0px 0px 0px 0px rgba(32, 77, 226, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(1, 1, 1, 1);
   transition: all 0.3s cubic-bezier(1, 1, 1, 1);
 }
@@ -892,18 +892,28 @@ button:focus {
 .card {
   background: #392074;
   border-radius: 3%;
-  height: 450px;
-  width: 300px;
+  height: 500px;
+  width: 310px;
   position: relative;
   margin-top: 40px;
   margin-right: 20px;
   margin-left: 20px;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .thumbnail {
   width: 100%;
-  height: 170px;
+  height: auto;
 }
 
 .card-1 {
@@ -926,8 +936,40 @@ button:focus {
   padding: 5px;
 }
 
+.cardTech {
+  padding: 5px;
+  font-size: 14px;
+  display: inline;
+}
+
+.cardTech ul {
+  list-style: none;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.cardTech li {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5em;
+}
+
+.cardTech ul li::before {
+  content: "";
+  width: 1em;
+  margin-left: -2em;
+}
+
 .cardLinks {
   padding: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.cardLinks a {
+  padding: 5px;
+  font-size: 25px;
 }
 
 .cardContainer {
@@ -936,9 +978,8 @@ button:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media only screen and (max-width: 1600px) {
