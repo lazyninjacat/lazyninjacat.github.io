@@ -9,6 +9,8 @@ $(function() {
   });
 });
 
+// TODO:
+
 $(document).ready(function() {
   // Add smooth scrolling to all links
   $("a").on("click", function(event) {
@@ -56,6 +58,7 @@ $(document).ready(function() {
 
 ////////////////////////////////////////////////////////////////
 
+// TODO:
 function animateIfInView() {
   $.each($(".wow"), function(key, value) {
     if (isElementInViewport($(value))) {
@@ -67,6 +70,7 @@ function animateIfInView() {
   });
 }
 
+// TODO:
 // http://stackoverflow.com/a/7557433/5628
 function isElementInViewport(el) {
   //special bonus for those using jQuery
