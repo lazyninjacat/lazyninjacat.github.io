@@ -12,10 +12,20 @@
 }
 
 #home {
-  height: 100vh;
+  height: auto;
   left: 20%;
   padding-top: 15vh;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #home h1 {
@@ -35,7 +45,6 @@
 
 @media only screen and (max-width: 1600px) {
   #home {
-    display: block;
     left: 10%;
     padding-top: 10vh;
   }
@@ -43,7 +52,6 @@
 
 @media only screen and (max-width: 1250px) {
   #home {
-    display: block;
     left: 10%;
     padding-top: 10vh;
   }
@@ -51,7 +59,6 @@
 
 @media only screen and (max-width: 900px) {
   #home {
-    display: block;
     left: 5%;
     width: 90%;
     padding-top: 10vh;
@@ -63,7 +70,6 @@
 
 @media only screen and (max-width: 700px) {
   #home {
-    display: block;
     left: 5%;
     width: 90%;
     padding-top: 6vh;
@@ -1322,15 +1328,15 @@ fieldset {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
-  -webkit-box-shadow: 2px 2px 2px 2px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
-          box-shadow: 2px 2px 2px 2px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
+          box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(1, 1, 1, 1);
   transition: all 0.3s cubic-bezier(1, 1, 1, 1);
 }
 
 .featureCardDescription:hover {
-  -webkit-box-shadow: 10px 10px 10px 10px rgba(62, 65, 231, 0.25), 10px 10px 10px 10px rgba(72, 41, 211, 0.22);
-          box-shadow: 10px 10px 10px 10px rgba(62, 65, 231, 0.25), 10px 10px 10px 10px rgba(72, 41, 211, 0.22);
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+          box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
 }
 
 .featureCardLinks {
@@ -1342,8 +1348,17 @@ fieldset {
 }
 
 .featureCardLinks a {
-  padding: 5px;
+  padding: 15px;
   font-size: 25px;
+  -webkit-transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+  transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+  text-align: center;
+}
+
+.featureCardLinks a:hover {
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+          box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+  border-radius: 50%;
 }
 
 .featureTech {
@@ -1358,6 +1373,15 @@ fieldset {
   padding: 10px;
   font-size: 12px;
   display: inline;
+  -webkit-transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+  transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+  line-height: 2em;
+}
+
+.featureTech p:hover {
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+          box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+  border-radius: 40%;
 }
 
 .featureTopline {
@@ -1467,8 +1491,6 @@ fieldset {
     text-align: right;
     -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 1;
-    grid-column: 1;
   }
   .featureTopline {
     padding: 5px;
@@ -1484,14 +1506,12 @@ fieldset {
     text-align: center;
     -ms-grid-row: 5;
     grid-row: 5;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: inline-block;
   }
   .featureTech p {
     padding: 10px;
     font-size: 12px;
-    display: inline;
+    display: inline-block;
   }
   .featureCardLinks {
     padding: 5px;

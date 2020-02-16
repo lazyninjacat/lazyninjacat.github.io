@@ -10,10 +10,13 @@
 }
 
 #home {
-  height: 100vh;
+  height: auto;
   left: 20%;
   padding-top: 15vh;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   h1 {
     font-size: 70px;
   }
@@ -31,21 +34,18 @@
 
 @media only screen and (max-width: $largescreen) {
   #home {
-    display: block;
     left: 10%;
     padding-top: 10vh;
   }
 }
 @media only screen and (max-width: $mediumlargescreen) {
   #home {
-    display: block;
     left: 10%;
     padding-top: 10vh;
   }
 }
 @media only screen and (max-width: $mediumscreen) {
   #home {
-    display: block;
     left: 5%;
     width: 90%;
     padding-top: 10vh;
@@ -57,7 +57,6 @@
 }
 @media only screen and (max-width: $smallscreen) {
   #home {
-    display: block;
     left: 5%;
     width: 90%;
     padding-top: 6vh;

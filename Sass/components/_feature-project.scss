@@ -69,14 +69,14 @@
   margin-bottom: 10px;
   grid-row-start: 3;
   grid-row-end: 4;
-  box-shadow: 2px 2px 2px 2px rgba(55, 17, 160, 0.12),
+  box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12),
     2px 2px 2px 2px rgba(132, 32, 226, 0.24);
   transition: all 0.3s cubic-bezier(1, 1, 1, 1);
 }
 
 .featureCardDescription:hover {
-  box-shadow: 10px 10px 10px 10px rgba(62, 65, 231, 0.25),
-    10px 10px 10px 10px rgba(72, 41, 211, 0.22);
+  box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25),
+    3px 3px 3px 3px rgba(72, 41, 211, 0.22);
 }
 
 .featureCardLinks {
@@ -85,8 +85,15 @@
   margin-top: 30px;
   grid-row: 6;
   a {
-    padding: 5px;
+    padding: 15px;
     font-size: 25px;
+    transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+    text-align: center;
+  }
+  a:hover {
+    box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25),
+      3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+    border-radius: 50%;
   }
 }
 
@@ -99,6 +106,13 @@
     padding: 10px;
     font-size: 12px;
     display: inline;
+    transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+    line-height: 2em;
+  }
+  p:hover {
+    box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25),
+      3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+    border-radius: 40%;
   }
 }
 
@@ -195,7 +209,6 @@
     padding: 5px;
     text-align: right;
     grid-row: 1;
-    grid-column: 1;
   }
   .featureTopline {
     padding: 5px;
@@ -208,11 +221,11 @@
     padding: 5px;
     text-align: center;
     grid-row: 5;
-    display: inline-flex;
+    display: inline-block;
     p {
       padding: 10px;
       font-size: 12px;
-      display: inline;
+      display: inline-block;
     }
   }
 
