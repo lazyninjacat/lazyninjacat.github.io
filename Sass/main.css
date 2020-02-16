@@ -12,7 +12,7 @@
 }
 
 #home {
-  height: auto;
+  height: 50vh;
   left: 20%;
   padding-top: 15vh;
   width: 80%;
@@ -26,6 +26,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20vh;
 }
 
 #home h1 {
@@ -116,13 +117,13 @@
 }
 
 #contact h2 span {
-  background: #040822;
+  background: #0b0f2b;
   padding-left: 10px;
   margin-right: -1px;
 }
 
 .contactDescription {
-  background: #040822;
+  background: #0b0f2b;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -193,7 +194,7 @@
 }
 
 #portfolio h2 span {
-  background: #040822;
+  background: #0b0f2b;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -269,7 +270,7 @@
 .aboutHorizontalLine {
   width: 100%;
   margin-top: 0px;
-  border: 0px solid #040822;
+  border: 0px solid #0b0f2b;
 }
 
 .aboutContentContainer {
@@ -312,7 +313,7 @@
 }
 
 #about h2 span {
-  background: #040822;
+  background: #0b0f2b;
   padding-right: 10px;
   margin-left: -1px;
 }
@@ -466,7 +467,7 @@ a:hover {
 }
 
 body {
-  background-color: #040822;
+  background-color: #0b0f2b;
   font-family: Quicksand;
   font-size: 17px;
   color: #9fb1bc;
@@ -602,7 +603,7 @@ header {
   height: 80px;
   width: 100%;
   z-index: 1;
-  background-color: #040822c0;
+  background-color: #0b0f2bd5;
   position: absolute;
   margin-left: 3px;
   margin-right: 3px;
@@ -661,7 +662,7 @@ header {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-right: 20px;
+  margin-left: 5px;
 }
 
 .margin0percent {
@@ -671,7 +672,7 @@ header {
 
 @media only screen and (max-width: 900px) {
   header {
-    background-color: #040822c0;
+    background-color: #0b0f2bd5;
     height: 40px;
     width: 91%;
     left: 5%;
@@ -681,16 +682,15 @@ header {
   }
   .headerLogo {
     float: left;
-    font-size: 25px;
+    font-size: 26px;
     margin-top: 2px;
-    padding: 0px;
     font-family: PT Sans;
     color: #6e8898;
     vertical-align: middle;
   }
   .headerLogo a {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -881,12 +881,18 @@ button {
   font-size: 20px;
   padding: 20px;
   border-width: 0px;
+  -webkit-transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+  transition: all 0.1s cubic-bezier(1, 1, 1, 1);
 }
 
 button:hover {
   color: #d3d0cb;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 2px;
+  background: #0b0f2b;
+  -webkit-box-shadow: inset 5px 5px 7px #050714, inset -5px -5px 7px #111742;
+          box-shadow: inset 5px 5px 7px #050714, inset -5px -5px 7px #111742;
 }
 
 button:focus {
@@ -894,7 +900,7 @@ button:focus {
 }
 
 .card {
-  background: #392074;
+  border: 1px solid #6e8898;
   border-radius: 3%;
   height: 500px;
   width: 310px;
@@ -921,8 +927,8 @@ button:focus {
 }
 
 .card-1 {
-  -webkit-box-shadow: 0 1px 3px rgba(55, 17, 160, 0.12), 0 1px 2px rgba(132, 32, 226, 0.24);
-          box-shadow: 0 1px 3px rgba(55, 17, 160, 0.12), 0 1px 2px rgba(132, 32, 226, 0.24);
+  -webkit-box-shadow: 1px 1px 1px rgba(55, 17, 160, 0.12), 1px 1px 1px rgba(132, 32, 226, 0.24);
+          box-shadow: 1px 1px 1px rgba(55, 17, 160, 0.12), 1px 1px 1px rgba(132, 32, 226, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -1002,12 +1008,18 @@ button:focus {
 @media only screen and (max-width: 900px) {
   .card {
     display: block;
-    background: #3f247c;
     border-radius: 3%;
     position: relative;
     padding: 15px;
     width: 70%;
     height: 50%;
+  }
+  .cardLinks {
+    text-align: right;
+  }
+  .cardLinks a {
+    padding: 15px;
+    font-size: 25px;
   }
 }
 
@@ -1020,7 +1032,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #040822;
+  background: #0b0f2b;
   border-radius: var(--border-width);
 }
 
@@ -1206,7 +1218,7 @@ fieldset {
 #contact button[type="submit"] {
   cursor: pointer;
   border: none;
-  background: #040822;
+  background: #0b0f2b;
   color: lightgreen;
   margin-top: 10px;
   padding-top: 20px;
@@ -1292,21 +1304,30 @@ fieldset {
 }
 
 .featureCard-1 {
-  -webkit-box-shadow: 2px 2px 2px 2px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
-          box-shadow: 2px 2px 2px 2px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(1, 1, 1, 1);
-  transition: all 0.3s cubic-bezier(1, 1, 1, 1);
+  border-radius: 55px;
+  background: #0b0f2b;
+  -webkit-box-shadow: 1px 1px 2px #050714, -5px -5px 7px #111742;
+          box-shadow: 1px 1px 2px #050714, -5px -5px 7px #111742;
+  -webkit-transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+  transition: all 0.1s cubic-bezier(1, 1, 1, 1);
 }
 
 .featureCard-1:hover {
-  -webkit-box-shadow: 10px 10px 10px 10px rgba(62, 65, 231, 0.25), 10px 10px 10px 10px rgba(72, 41, 211, 0.22);
-          box-shadow: 10px 10px 10px 10px rgba(62, 65, 231, 0.25), 10px 10px 10px 10px rgba(72, 41, 211, 0.22);
+  border-radius: 55px;
+  background: #0b0f2b;
+  -webkit-box-shadow: 35px 35px 71px #050714, -35px -35px 71px #111742;
+          box-shadow: 35px 35px 71px #050714, -35px -35px 71px #111742;
 }
 
 .featureCardInfoContainer {
   display: -ms-grid;
   display: grid;
   width: 50%;
+}
+
+.featureCardInfoContainer h3 {
+  padding-top: 10px;
+  text-align: center;
 }
 
 .featureCardTitle {
@@ -1319,7 +1340,7 @@ fieldset {
 }
 
 .featureCardDescription {
-  padding: 5px;
+  padding: 15px;
   background: #392074;
   text-align: right;
   margin-left: 30px;
@@ -1328,15 +1349,16 @@ fieldset {
   -ms-grid-row: 3;
       grid-row-start: 3;
   grid-row-end: 4;
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
-          box-shadow: 1px 1px 1px 1px rgba(55, 17, 160, 0.12), 2px 2px 2px 2px rgba(132, 32, 226, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(1, 1, 1, 1);
-  transition: all 0.3s cubic-bezier(1, 1, 1, 1);
+  -webkit-box-shadow: 0 0 0 rgba(55, 17, 160, 0.12), 0 0 0 rgba(132, 32, 226, 0.24);
+          box-shadow: 0 0 0 rgba(55, 17, 160, 0.12), 0 0 0 rgba(132, 32, 226, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .featureCardDescription:hover {
-  -webkit-box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
-          box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 3px 5px #489dcf, -3px -3px 5px #62d5ff;
+          box-shadow: 3px 3px 5px #489dcf, -3px -3px 5px #62d5ff;
 }
 
 .featureCardLinks {
@@ -1366,22 +1388,25 @@ fieldset {
   text-align: right;
   -ms-grid-row: 5;
   grid-row: 5;
-  display: inline-block;
 }
 
-.featureTech p {
-  padding: 10px;
+.featureTech ul {
+  list-style: none;
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.featureTech li {
+  padding: 5px;
   font-size: 12px;
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transition: all 0.1s cubic-bezier(1, 1, 1, 1);
   transition: all 0.1s cubic-bezier(1, 1, 1, 1);
-  line-height: 2em;
-}
-
-.featureTech p:hover {
-  -webkit-box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
-          box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
-  border-radius: 40%;
+  line-height: 1em;
 }
 
 .featureTopline {
@@ -1446,6 +1471,7 @@ fieldset {
     border-radius: 3%;
     position: relative;
     width: 90%;
+    margin: 0px;
     display: -ms-grid;
     display: grid;
   }
@@ -1512,6 +1538,7 @@ fieldset {
     padding: 10px;
     font-size: 12px;
     display: inline-block;
+    line-height: 1em;
   }
   .featureCardLinks {
     padding: 5px;
