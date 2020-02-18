@@ -1273,11 +1273,37 @@ fieldset {
   padding: 30px;
 }
 
-.featureThumbnailContainer {
-  height: 400px;
+.featureProjectLeftSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
+}
+
+.featureThumbnailContainer {
+  height: auto;
   margin-top: 0;
   display: inline-block;
+}
+
+.featureProjectLeftSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .featureThumbnail1 {
@@ -1474,6 +1500,10 @@ fieldset {
     margin: 0px;
     display: -ms-grid;
     display: grid;
+  }
+  .featureProjectLeftSide {
+    display: block;
+    width: 100%;
   }
   .featureThumbnailContainer {
     display: block;

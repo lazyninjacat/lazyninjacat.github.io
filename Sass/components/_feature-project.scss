@@ -9,11 +9,23 @@
   padding: 30px;
 }
 
-.featureThumbnailContainer {
-  height: 400px;
+.featureProjectLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
+}
+
+.featureThumbnailContainer {
+  height: auto;
   margin-top: 0;
   display: inline-block;
+}
+
+.featureProjectLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .featureThumbnail1 {
@@ -178,6 +190,11 @@
     width: 90%;
     margin: 0px;
     display: grid;
+  }
+  .featureProjectLeftSide {
+    display: block;
+
+    width: 100%;
   }
   .featureThumbnailContainer {
     display: block;
