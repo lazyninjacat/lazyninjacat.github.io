@@ -256,7 +256,8 @@
 }
 
 .aboutProfileImg {
-  width: 70%;
+  width: 80%;
+  text-align: right;
   margin-top: 10%;
   -webkit-filter: grayscale(0.7);
           filter: grayscale(0.7);
