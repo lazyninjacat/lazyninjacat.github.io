@@ -1,6 +1,7 @@
 a:link {
   text-decoration: none;
   color: inherit;
+  transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 a:visited {
@@ -9,5 +10,5 @@ a:visited {
 }
 
 a:hover {
-  color: white;
+  color: $code;
 }

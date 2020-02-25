@@ -52,10 +52,6 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $(window).scrollTop(0);
-});
-
 ////////////////////////////////////////////////////////////////
 
 // TODO:
