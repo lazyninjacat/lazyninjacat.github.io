@@ -116,6 +116,7 @@
 
 .featureTech {
   padding: 5px;
+  padding-left: 50px;
   text-align: right;
   grid-row: 5;
   // display: flex;
@@ -127,7 +128,7 @@
   }
   li {
     padding: 5px;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     transition: all 0.1s cubic-bezier(1, 1, 1, 1);
     line-height: 1em;
@@ -243,13 +244,20 @@
   }
   .featureTech {
     padding: 5px;
-    text-align: center;
+    text-align: right;
     grid-row: 5;
-    display: inline-block;
-    p {
+    // display: flex;
+    // flex-wrap: wrap;
+    ul {
+      list-style: none;
+      column-count: 2;
+      column-gap: 10px;
+    }
+    li {
       padding: 10px;
-      font-size: 12px;
-      display: inline-block;
+      font-size: 16px;
+
+      transition: all 0.1s cubic-bezier(1, 1, 1, 1);
       line-height: 1em;
     }
   }

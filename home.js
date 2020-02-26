@@ -1,8 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Smooth scrolling
 
-var wasClick = false;
-
 $(function() {
   $("a[href*=#]").on("click", function(e) {
     e.preventDefault();
@@ -21,7 +19,6 @@ $(document).ready(function() {
     if (this.hash !== "") {
       event.preventDefault(); // Prevent default anchor click behavior
       var hash = this.hash; // Store hash
-      wasClick = true;
 
       // Using jQuery's animate() method to add smooth page scroll
       $("html, body").animate(
@@ -36,7 +33,6 @@ $(document).ready(function() {
           window.location.hash = hash;
         }
       );
-      wasClick = false;
     }
   });
 });

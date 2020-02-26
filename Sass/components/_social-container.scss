@@ -16,9 +16,6 @@
     padding-bottom: 10px;
     transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   }
-  a i:hover {
-    box-shadow: 2px 2px midnightblue;
-  }
 }
 
 @media only screen and (max-width: $largescreen) {

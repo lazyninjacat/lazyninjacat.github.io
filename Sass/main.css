@@ -397,7 +397,7 @@
     display: block;
   }
   #about .aboutProfileImg {
-    width: 40%;
+    width: 70%;
     padding: 10px;
   }
   #about .aboutProfileImgSlot {
@@ -1103,11 +1103,6 @@ button:focus {
   transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
-.socialContainer a i:hover {
-  -webkit-box-shadow: 2px 2px midnightblue;
-          box-shadow: 2px 2px midnightblue;
-}
-
 @media only screen and (max-width: 900px) {
   .socialContainer {
     display: none;
@@ -1436,6 +1431,7 @@ fieldset {
 
 .featureTech {
   padding: 5px;
+  padding-left: 50px;
   text-align: right;
   -ms-grid-row: 5;
   grid-row: 5;
@@ -1451,7 +1447,7 @@ fieldset {
 
 .featureTech li {
   padding: 5px;
-  font-size: 12px;
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1584,15 +1580,22 @@ fieldset {
   }
   .featureTech {
     padding: 5px;
-    text-align: center;
+    text-align: right;
     -ms-grid-row: 5;
     grid-row: 5;
-    display: inline-block;
   }
-  .featureTech p {
+  .featureTech ul {
+    list-style: none;
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .featureTech li {
     padding: 10px;
-    font-size: 12px;
-    display: inline-block;
+    font-size: 16px;
+    -webkit-transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+    transition: all 0.1s cubic-bezier(1, 1, 1, 1);
     line-height: 1em;
   }
   .featureCardLinks {
