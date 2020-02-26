@@ -1,20 +1,27 @@
 header {
   height: 80px;
-  width: 100%;
   z-index: 1;
-  background-color: $menu_background;
   position: absolute;
-  margin-left: 3px;
-  margin-right: 3px;
+  box-shadow: 0px 1px 1px black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.headerContainer {
+  background-color: $menu_background;
+
+  transition: all 0.5s;
+}
+
+.closeMobileHeader {
+  transform: translateY(-85px);
+  transition: all 0.5s;
 }
 
 .headerMobileMenuIcon {
   float: right;
-  padding: 5px;
   font-size: 20px;
   display: none;
-  margin-top: 8px;
-  margin-right: 7px;
 }
 
 .headerLogo-1 {
@@ -24,19 +31,18 @@ header {
 }
 
 .headerLogo-1:hover {
-  box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25),
-    3px 3px 3px 3px rgba(72, 41, 211, 0.22);
+  box-shadow: 3px 3px 3px rgba(62, 65, 231, 0.25),
+    3px 3px 3px rgba(72, 41, 211, 0.22);
 }
 
 .headerLogo {
   float: left;
   font-size: 30px;
-  margin-left: 2px;
-  margin-top: 19px;
   padding-left: 2px;
   padding-right: 2px;
   font-family: "Courier New", Courier, monospace;
   color: $code;
+  margin-top: 20px;
 
   a {
     padding-top: 5px;
@@ -50,8 +56,7 @@ header {
   float: right;
   font-family: "Courier New", Courier, monospace;
   color: $lightgreygreen;
-  margin-top: 10px;
-  margin-right: 0px;
+  margin-top: 7px;
 
   li {
     display: inline;
@@ -75,9 +80,8 @@ header {
 @media only screen and (max-width: $mediumscreen) {
   header {
     background-color: $menu_background;
-    height: 40px;
-    width: 91%;
-    left: 5%;
+    height: 45px;
+    padding: 10px;
   }
 
   .headerMenu {
@@ -87,12 +91,10 @@ header {
   .headerLogo {
     float: left;
     font-size: 26px;
-    margin-top: 2px;
     font-family: PT Sans;
 
     color: $darkgreygreen;
-    vertical-align: middle;
-
+    margin-top: 10px;
     a {
       padding-top: 5px;
       padding-bottom: 5px;
@@ -100,11 +102,11 @@ header {
       padding-right: 5px;
     }
   }
+
+  .closeMobileHeader {
+    transform: translateY(-60px);
+  }
 }
 
 @media only screen and (max-width: $smallscreen) {
-  header {
-    width: 91%;
-    left: 6%;
-  }
 }
