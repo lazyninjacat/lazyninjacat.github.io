@@ -162,30 +162,6 @@
 
 @media only screen and (max-width: $mediumscreen) {
   .featureCard {
-    display: flexbox;
-    border-radius: 3%;
-    position: relative;
-    padding: 15px;
-    width: 90%;
-    height: 50%;
-  }
-  .featureThumbnailContainer {
-    display: block;
-  }
-  .featureThumbnail1 {
-    width: 100%;
-    height: 50%;
-  }
-  .featureThumbnail2 {
-    width: 80%;
-  }
-  .featureThumbnail3 {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: $smallscreen) {
-  .featureCard {
     border-radius: 3%;
     position: relative;
     width: 90%;
@@ -274,4 +250,7 @@
       font-size: 25px;
     }
   }
+}
+
+@media only screen and (max-width: $smallscreen) {
 }
