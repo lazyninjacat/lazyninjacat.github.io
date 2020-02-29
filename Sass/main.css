@@ -116,13 +116,13 @@
 }
 
 #contact h2 span {
-  background: #0b0f2b;
+  background: #10132b;
   padding-left: 10px;
   margin-right: -1px;
 }
 
 .contactDescription {
-  background: #0b0f2b;
+  background: #10132b;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -193,7 +193,7 @@
 }
 
 #portfolio h2 span {
-  background: #0b0f2b;
+  background: #10132b;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -282,7 +282,7 @@
 .aboutHorizontalLine {
   width: 100%;
   margin-top: 0px;
-  border: 0px solid #0b0f2b;
+  border: 0px solid #10132b;
 }
 
 .aboutContentContainer {
@@ -326,7 +326,7 @@
 }
 
 #about h2 span {
-  background: #0b0f2b;
+  background: #10132b;
   padding-right: 10px;
   margin-left: -1px;
 }
@@ -483,7 +483,7 @@ a:hover {
 }
 
 body {
-  background-color: #0b0f2b;
+  background-color: #10132b;
   font-family: Quicksand;
   font-size: 17px;
   color: #9fb1bc;
@@ -625,7 +625,7 @@ header {
 }
 
 .headerContainer {
-  background-color: #0b0f2bd5;
+  background-color: #10132bd5;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -695,7 +695,7 @@ header {
 
 @media only screen and (max-width: 900px) {
   header {
-    background-color: #0b0f2bd5;
+    background-color: #10132bd5;
     height: 45px;
     padding: 10px;
     -webkit-box-shadow: none;
@@ -1052,7 +1052,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #0b0f2b;
+  background: #10132b;
   border-radius: var(--border-width);
 }
 
@@ -1240,7 +1240,7 @@ fieldset {
 #contact button[type="submit"] {
   cursor: pointer;
   border: none;
-  background: #0b0f2b;
+  background: #10132b;
   color: lightgreen;
   margin-top: 10px;
   padding-top: 20px;
