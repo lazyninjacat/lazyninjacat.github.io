@@ -58,7 +58,7 @@
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   #home {
     left: 5%;
     width: 90%;
@@ -145,7 +145,7 @@
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   #contact {
     left: 5%;
     width: 90%;
@@ -207,7 +207,7 @@
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   #portfolio {
     display: inline-block;
     padding-top: 15vh;
@@ -408,7 +408,7 @@
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   #about {
     display: block;
     left: 5%;
@@ -691,7 +691,7 @@ header {
   margin-right: 0px;
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   header {
     background-color: #10132bd5;
     height: 45px;
@@ -873,7 +873,7 @@ header {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   span {
     padding-left: 0px;
   }
@@ -1019,7 +1019,7 @@ button:focus {
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   .card {
     display: block;
     border-radius: 3%;
@@ -1099,7 +1099,7 @@ button:focus {
   transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   .socialContainer {
     display: none;
   }
@@ -1126,7 +1126,7 @@ button:focus {
   top: 100%;
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   .headerHorizontalLine {
     display: none;
   }
@@ -1485,7 +1485,7 @@ fieldset {
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   .featureCard {
     border-radius: 3%;
     position: relative;
