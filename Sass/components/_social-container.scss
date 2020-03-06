@@ -14,7 +14,13 @@
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    transition: all 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    box-shadow: 0px 0px 0px 0px rgba(55, 17, 160, 0.12),
+      0px 0px 0px 0px rgba(32, 77, 226, 0.24);
+    transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+  }
+  a i:hover {
+    box-shadow: 3px 3px 3px rgba(62, 65, 231, 0.25),
+      13px 13px 13px rgba(72, 41, 211, 0.22);
   }
 }
 
