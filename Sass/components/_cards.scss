@@ -1,7 +1,7 @@
 .card {
   // background: rgb(57, 32, 116);
   border: 1px solid $darkgreygreen;
-  border-radius: 3%;
+  border-radius: 0%;
   height: 570px;
   width: 310px;
   position: relative;
@@ -12,6 +12,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 23, 65, 0.253);
+  color: white;
+  border: 1px solid #489dcf;
 }
 
 .thumbnail {
@@ -63,9 +71,17 @@
 .cardLinks {
   padding: 5px;
   align-self: flex-end;
+  transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+
   a {
-    padding: 5px;
+    padding: 10px;
     font-size: 25px;
+  }
+}
+
+.cardLinks:hover {
+  a {
+    transform: translateY(-5px);
   }
 }
 
@@ -89,10 +105,9 @@
 @media only screen and (max-width: $mediumscreen) {
   .card {
     display: block;
-    border-radius: 3%;
     position: relative;
     padding: 15px;
-    width: 70%;
+    width: 80%;
     height: 50%;
   }
   .cardLinks {

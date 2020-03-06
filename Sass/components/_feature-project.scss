@@ -56,9 +56,10 @@
 }
 
 .featureCard-1:hover {
-  border-radius: 55px;
+  border-radius: 5px;
   background: #0b0f2b;
-  box-shadow: 35px 35px 71px #050714, -35px -35px 71px #111742;
+  box-shadow: 15px 15px 25px #050714, -15px -15px 25px #111742;
+  border: 1px solid #62d5ff;
 }
 
 .featureCardInfoContainer {
@@ -92,8 +93,8 @@
 }
 
 .featureCardDescription:hover {
-  border-radius: 30px;
-  box-shadow: 3px 3px 5px #489dcf, -3px -3px 5px #62d5ff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px #489dcf, -4px -4px 4px #62d5ff;
 }
 
 .featureCardLinks {
@@ -101,16 +102,16 @@
   text-align: right;
   margin-top: 30px;
   grid-row: 6;
+  display: flex;
+  justify-content: flex-end;
   a {
     padding: 15px;
     font-size: 25px;
-    transition: all 0.2s cubic-bezier(1, 1, 1, 1);
     text-align: center;
+    transition: all 0.2s cubic-bezier(1, 1, 1, 1);
   }
   a:hover {
-    box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25),
-      3px 3px 3px 3px rgba(72, 41, 211, 0.22);
-    border-radius: 50%;
+    transform: translateY(-5px);
   }
 }
 
@@ -162,17 +163,25 @@
 
 @media only screen and (max-width: $mediumscreen) {
   .featureCard {
-    border-radius: 3%;
+    border-radius: 2%;
     position: relative;
-    width: 90%;
+    width: auto;
     margin: 0px;
+
     margin-top: 50px;
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .featureCardContainer {
+    display: block;
+
+    padding: 5px;
   }
   .featureProjectLeftSide {
     display: block;
 
-    width: 100%;
+    width: auto;
   }
   .featureThumbnailContainer {
     display: block;
@@ -185,6 +194,20 @@
     display: block;
     grid-row: 1;
     width: 100%;
+
+    .featureCardTitle {
+      text-align: center;
+    }
+
+    .featureTopline {
+      text-align: center;
+    }
+
+    .featureCardDescription {
+      text-align: left;
+      margin: 20px;
+      width: auto;
+    }
   }
   .featureThumbnail1 {
     width: 100%;
@@ -223,11 +246,12 @@
     padding: 5px;
     text-align: right;
     grid-row: 5;
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     ul {
       list-style: none;
-      column-count: 2;
+      column-count: 3;
       column-gap: 10px;
     }
     li {
@@ -241,13 +265,13 @@
 
   .featureCardLinks {
     padding: 5px;
-    text-align: center;
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 50px;
     grid-row: 6;
     a {
       padding: 25px;
-      font-size: 25px;
+      font-size: 30px;
     }
   }
 }

@@ -920,7 +920,7 @@ button:focus {
 
 .card {
   border: 1px solid #6e8898;
-  border-radius: 3%;
+  border-radius: 0%;
   height: 570px;
   width: 310px;
   position: relative;
@@ -938,6 +938,16 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+  transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+}
+
+.card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: rgba(0, 23, 65, 0.253);
+  color: white;
+  border: 1px solid #489dcf;
 }
 
 .thumbnail {
@@ -994,11 +1004,18 @@ button:focus {
   padding: 5px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-transition: all 0.1s cubic-bezier(1, 1, 1, 1);
+  transition: all 0.1s cubic-bezier(1, 1, 1, 1);
 }
 
 .cardLinks a {
-  padding: 5px;
+  padding: 10px;
   font-size: 25px;
+}
+
+.cardLinks:hover a {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .cardContainer {
@@ -1027,10 +1044,9 @@ button:focus {
 @media only screen and (max-width: 1020px) {
   .card {
     display: block;
-    border-radius: 3%;
     position: relative;
     padding: 15px;
-    width: 70%;
+    width: 80%;
     height: 50%;
   }
   .cardLinks {
@@ -1367,10 +1383,11 @@ fieldset {
 }
 
 .featureCard-1:hover {
-  border-radius: 55px;
+  border-radius: 5px;
   background: #0b0f2b;
-  -webkit-box-shadow: 35px 35px 71px #050714, -35px -35px 71px #111742;
-          box-shadow: 35px 35px 71px #050714, -35px -35px 71px #111742;
+  -webkit-box-shadow: 15px 15px 25px #050714, -15px -15px 25px #111742;
+          box-shadow: 15px 15px 25px #050714, -15px -15px 25px #111742;
+  border: 1px solid #62d5ff;
 }
 
 .featureCardInfoContainer {
@@ -1410,9 +1427,9 @@ fieldset {
 }
 
 .featureCardDescription:hover {
-  border-radius: 30px;
-  -webkit-box-shadow: 3px 3px 5px #489dcf, -3px -3px 5px #62d5ff;
-          box-shadow: 3px 3px 5px #489dcf, -3px -3px 5px #62d5ff;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 4px #489dcf, -4px -4px 4px #62d5ff;
+          box-shadow: 4px 4px 4px #489dcf, -4px -4px 4px #62d5ff;
 }
 
 .featureCardLinks {
@@ -1421,20 +1438,25 @@ fieldset {
   margin-top: 30px;
   -ms-grid-row: 6;
   grid-row: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .featureCardLinks a {
   padding: 15px;
   font-size: 25px;
+  text-align: center;
   -webkit-transition: all 0.2s cubic-bezier(1, 1, 1, 1);
   transition: all 0.2s cubic-bezier(1, 1, 1, 1);
-  text-align: center;
 }
 
 .featureCardLinks a:hover {
-  -webkit-box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
-          box-shadow: 3px 3px 3px 3px rgba(62, 65, 231, 0.25), 3px 3px 3px 3px rgba(72, 41, 211, 0.22);
-  border-radius: 50%;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .featureTech {
@@ -1499,17 +1521,26 @@ fieldset {
 
 @media only screen and (max-width: 1020px) {
   .featureCard {
-    border-radius: 3%;
+    border-radius: 2%;
     position: relative;
-    width: 90%;
+    width: auto;
     margin: 0px;
     margin-top: 50px;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .featureCardContainer {
+    display: block;
+    padding: 5px;
   }
   .featureProjectLeftSide {
     display: block;
-    width: 100%;
+    width: auto;
   }
   .featureThumbnailContainer {
     display: block;
@@ -1524,6 +1555,17 @@ fieldset {
     -ms-grid-row: 1;
     grid-row: 1;
     width: 100%;
+  }
+  .featureCardInfoContainer .featureCardTitle {
+    text-align: center;
+  }
+  .featureCardInfoContainer .featureTopline {
+    text-align: center;
+  }
+  .featureCardInfoContainer .featureCardDescription {
+    text-align: left;
+    margin: 20px;
+    width: auto;
   }
   .featureThumbnail1 {
     width: 100%;
@@ -1568,11 +1610,19 @@ fieldset {
     text-align: right;
     -ms-grid-row: 5;
     grid-row: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .featureTech ul {
     list-style: none;
-    -webkit-column-count: 2;
-            column-count: 2;
+    -webkit-column-count: 3;
+            column-count: 3;
     -webkit-column-gap: 10px;
             column-gap: 10px;
   }
@@ -1585,7 +1635,9 @@ fieldset {
   }
   .featureCardLinks {
     padding: 5px;
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 30px;
     margin-bottom: 50px;
     -ms-grid-row: 6;
@@ -1593,7 +1645,7 @@ fieldset {
   }
   .featureCardLinks a {
     padding: 25px;
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
