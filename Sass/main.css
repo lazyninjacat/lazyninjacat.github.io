@@ -651,7 +651,7 @@ header {
 }
 
 .headerLogo a {
-  padding-top: 25px;
+  padding-top: 20px;
   padding-bottom: 25px;
   padding-left: 17px;
   padding-right: 17px;
@@ -670,7 +670,7 @@ header {
   float: right;
   font-family: "Courier New", Courier, monospace;
   color: #9fb1bc;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .headerMenu li {
