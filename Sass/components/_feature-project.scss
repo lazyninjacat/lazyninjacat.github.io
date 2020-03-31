@@ -109,7 +109,6 @@
   align-items: center;
   padding-left: 15px;
 
-
   a {
     font-size: 27px;
     transition: all 0.2s cubic-bezier(1, 1, 1, 1);
@@ -131,21 +130,17 @@
       height: 56px;
       margin-right: 0px;
       transform: translateY(3px);
-
     }
-
   }
   a:hover {
     transform: translateY(-5px);
   }
-
-
 }
 
 .featureTech {
   padding: 5px;
   padding-left: 30px;
-  text-align: left;
+  text-align: right;
   grid-row: 5;
 
   p{

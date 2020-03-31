@@ -1481,7 +1481,7 @@ fieldset {
 .featureTech {
   padding: 5px;
   padding-left: 30px;
-  text-align: left;
+  text-align: right;
   -ms-grid-row: 5;
   grid-row: 5;
 }
