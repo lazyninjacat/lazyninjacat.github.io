@@ -44,8 +44,14 @@
   padding: 5px;
 }
 .featureThumbnail4 {
-  width: auto;
-  height: 180px;
+  width: 47%;
+  height: auto;
+  padding: 5px;
+}
+.featureThumbnail5 {
+  width: 47%;
+  height: auto;
+  padding: 5px;
 }
 
 .featureCard-1 {
@@ -98,34 +104,68 @@
 }
 
 .featureCardLinks {
-  padding: 5px;
-  text-align: right;
-  margin-top: 30px;
   grid-row: 6;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  padding-left: 15px;
+
+
   a {
-    padding: 15px;
-    font-size: 25px;
-    text-align: center;
+    font-size: 27px;
     transition: all 0.2s cubic-bezier(1, 1, 1, 1);
+    padding: 0px;
+    margin: 0px;
+    padding-right: 20px;
+
+    #GooglePlay{
+      width: 190px;
+      // height: 60px;
+      margin-right: 0px;
+      transform: translateY(3px);
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #AppStore{
+      width: 190px;
+      height: 56px;
+      margin-right: 0px;
+      transform: translateY(3px);
+
+    }
+
   }
   a:hover {
     transform: translateY(-5px);
   }
+
+
 }
 
 .featureTech {
   padding: 5px;
-  padding-left: 50px;
-  text-align: right;
+  padding-left: 30px;
+  text-align: left;
   grid-row: 5;
+
+  p{
+    display: inline;
+    margin-right: 30px;
+
+    i{
+      margin-right: 3px;
+    }
+  }
+
+
+
   // display: flex;
   // flex-wrap: wrap;
   ul {
     list-style: none;
-    column-count: 3;
-    column-gap: 10px;
+    column-count: 4;
+    column-gap: 0px;
+
   }
   li {
     padding: 5px;
@@ -133,6 +173,7 @@
     display: flex;
     transition: all 0.1s cubic-bezier(1, 1, 1, 1);
     line-height: 1em;
+
   }
 }
 
@@ -267,7 +308,7 @@
 
   .featureCardLinks {
     padding: 5px;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 30px;
     margin-bottom: 50px;
     grid-row: 6;
@@ -275,6 +316,7 @@
       padding: 25px;
       font-size: 30px;
     }
+
   }
 }
 
