@@ -138,7 +138,8 @@
 }
 
 .featureTech {
-  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;;
   padding-left: 30px;
   text-align: right;
   grid-row: 5;
@@ -183,17 +184,16 @@
 }
 
 @media only screen and (max-width: $largescreen) {
-  .featureCardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
+ 
+
 }
 
 @media only screen and (max-width: $mediumlargescreen) {
+
 }
 
-@media only screen and (max-width: $mediumscreen) {
+@media only screen and (max-width: $largescreen) {
   .featureCard {
     border-radius: 2%;
     position: relative;
@@ -246,11 +246,15 @@
     width: 100%;
   }
   .featureThumbnail2 {
-    width: 100%;
+    width: 48%;
     margin-top: 10px;
   }
   .featureThumbnail3 {
-    width: 100%;
+    width: 48%;
+    margin-top: 10px;
+  }
+  .featureThumbnail4 {
+    width: 48%;
     margin-top: 10px;
   }
   .featureCardDescription {
@@ -299,7 +303,7 @@
 
   .featureCardLinks {
     padding: 5px;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 50px;
     grid-row: 6;

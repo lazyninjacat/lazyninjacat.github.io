@@ -895,6 +895,14 @@ header {
 
 footer {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  width: 100%;
 }
 
 button {
@@ -1479,7 +1487,8 @@ fieldset {
 }
 
 .featureTech {
-  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 30px;
   text-align: right;
   -ms-grid-row: 5;
@@ -1535,19 +1544,6 @@ fieldset {
 }
 
 @media only screen and (max-width: 1600px) {
-  .featureCardContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 1020px) {
   .featureCard {
     border-radius: 2%;
     position: relative;
@@ -1600,11 +1596,15 @@ fieldset {
     width: 100%;
   }
   .featureThumbnail2 {
-    width: 100%;
+    width: 48%;
     margin-top: 10px;
   }
   .featureThumbnail3 {
-    width: 100%;
+    width: 48%;
+    margin-top: 10px;
+  }
+  .featureThumbnail4 {
+    width: 48%;
     margin-top: 10px;
   }
   .featureCardDescription {
@@ -1665,9 +1665,8 @@ fieldset {
   }
   .featureCardLinks {
     padding: 5px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 50px;
     -ms-grid-row: 6;
