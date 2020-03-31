@@ -1596,15 +1596,15 @@ fieldset {
     width: 100%;
   }
   .featureThumbnail2 {
-    width: 48%;
+    width: 47%;
     margin-top: 10px;
   }
   .featureThumbnail3 {
-    width: 48%;
+    width: 47%;
     margin-top: 10px;
   }
   .featureThumbnail4 {
-    width: 48%;
+    width: 47%;
     margin-top: 10px;
   }
   .featureCardDescription {
@@ -1675,6 +1675,49 @@ fieldset {
   .featureCardLinks a {
     padding: 25px;
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .featureCardContainer {
+    margin: 0px;
+  }
+  .featureCardInfoContainer {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .featureCardInfoContainer .featureCardDescription {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .featureCardLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featureCardLinks a {
+    padding: 25px;
+    font-size: 30px;
+  }
+  .featureThumbnail2 {
+    width: 45%;
+    margin-top: 10px;
+  }
+  .featureThumbnail3 {
+    width: 45%;
+    margin-top: 10px;
+  }
+  .featureThumbnail4 {
+    width: 45%;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

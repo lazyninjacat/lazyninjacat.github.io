@@ -183,15 +183,6 @@
   padding: 5px;
 }
 
-@media only screen and (max-width: $largescreen) {
-
- 
-
-}
-
-@media only screen and (max-width: $mediumlargescreen) {
-
-}
 
 @media only screen and (max-width: $largescreen) {
   .featureCard {
@@ -246,15 +237,15 @@
     width: 100%;
   }
   .featureThumbnail2 {
-    width: 48%;
+    width: 47%;
     margin-top: 10px;
   }
   .featureThumbnail3 {
-    width: 48%;
+    width: 47%;
     margin-top: 10px;
   }
   .featureThumbnail4 {
-    width: 48%;
+    width: 47%;
     margin-top: 10px;
   }
   .featureCardDescription {
@@ -316,4 +307,53 @@
 }
 
 @media only screen and (max-width: $smallscreen) {
+  
+  .featureCardContainer{
+    margin: 0px;
+  }
+
+  .featureCardInfoContainer{
+    margin-left: 0px;
+    padding-left: 0px;
+
+    .featureCardDescription{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: -10px;
+      margin-right: -10px;
+    
+    }
+
+  }
+
+
+
+
+  
+  .featureCardLinks {
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 25px;
+      font-size: 30px;
+    }
+
+  }
+
+  .featureThumbnail2 {
+    width: 45%;
+    margin-top: 10px;
+  }
+  .featureThumbnail3 {
+    width: 45%;
+    margin-top: 10px;
+  }
+  .featureThumbnail4 {
+    width: 45%;
+    margin-top: 10px;
+  }
+
+
 }
