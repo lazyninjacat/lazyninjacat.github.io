@@ -55,12 +55,12 @@
   transition: all 0.1s cubic-bezier(1, 1, 1, 1);
 }
 
-.featureCard-1:hover {
-  border-radius: 5px;
-  background: #0b0f2b;
-  box-shadow: 15px 15px 25px #050714, -15px -15px 25px #111742;
-  border: 1px solid #62d5ff;
-}
+// .featureCard-1:hover {
+//   border-radius: 5px;
+//   background: #0b0f2b;
+//   box-shadow: 15px 15px 25px #050714, -15px -15px 25px #111742;
+//   border: 1px solid #62d5ff;
+// }
 
 .featureCardInfoContainer {
   display: grid;
@@ -253,8 +253,8 @@
     flex-wrap: wrap;
     ul {
       list-style: none;
-      column-count: 3;
-      column-gap: 10px;
+      column-count: 2;
+      column-gap: 6px;
     }
     li {
       padding: 10px;

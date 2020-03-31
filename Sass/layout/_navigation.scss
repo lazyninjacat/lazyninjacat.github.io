@@ -90,12 +90,12 @@
 @keyframes slidein {
   0% {
     opacity: 0;
-    transform: translateY(-25px);
+    transform: translateX(-25px);
   }
   40%,
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
