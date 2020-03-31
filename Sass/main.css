@@ -1707,6 +1707,14 @@ fieldset {
     padding: 25px;
     font-size: 30px;
   }
+  .featureThumbnailContainer {
+    margin-left: -10px;
+    margin-right: -15px;
+  }
+  .featureProjectLeftSide {
+    margin-right: -15px;
+    padding: 0px;
+  }
   .featureThumbnail2 {
     width: 45%;
     margin-top: 10px;
