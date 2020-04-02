@@ -36,7 +36,7 @@
 #home h2 {
   font-size: 40px;
   font-family: PT Sans;
-  color: #6e8898;
+  color: #b8d3e4;
 }
 
 #home p {
@@ -80,7 +80,7 @@
   #home h2 {
     font-size: 30px;
     font-family: PT Sans;
-    color: #6e8898;
+    color: #b8d3e4;
   }
 }
 
@@ -116,13 +116,13 @@
 }
 
 #contact h2 span {
-  background: #10132b;
+  background: #06070f;
   padding-left: 10px;
   margin-right: -1px;
 }
 
 .contactDescription {
-  background: #10132b;
+  background: #06070f;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -193,7 +193,7 @@
 }
 
 #portfolio h2 span {
-  background: #10132b;
+  background: #06070f;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -282,7 +282,7 @@
 .aboutHorizontalLine {
   width: 100%;
   margin-top: 0px;
-  border: 0px solid #10132b;
+  border: 0px solid #06070f;
 }
 
 .aboutContentContainer {
@@ -326,7 +326,7 @@
 }
 
 #about h2 span {
-  background: #10132b;
+  background: #06070f;
   padding-right: 10px;
   margin-left: -1px;
 }
@@ -483,10 +483,10 @@ a:hover {
 }
 
 body {
-  background-color: #10132b;
+  background-color: #06070f;
   font-family: Quicksand;
   font-size: 17px;
-  color: #9fb1bc;
+  color: #cbe1ee;
 }
 
 h1 {
@@ -623,7 +623,7 @@ header {
 }
 
 .headerContainer {
-  background-color: #10132bd5;
+  background-color: #06070faf;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -669,7 +669,7 @@ header {
 .headerMenu {
   float: right;
   font-family: "Courier New", Courier, monospace;
-  color: #9fb1bc;
+  color: #cbe1ee;
   margin-top: 10px;
 }
 
@@ -698,7 +698,7 @@ header {
 
 @media only screen and (max-width: 1020px) {
   header {
-    background-color: #10132bd5;
+    background-color: #06070faf;
     height: 45px;
     padding: 10px;
     -webkit-box-shadow: none;
@@ -711,7 +711,7 @@ header {
     float: left;
     font-size: 26px;
     font-family: PT Sans;
-    color: #6e8898;
+    color: #b8d3e4;
     margin-top: 10px;
   }
   .headerLogo a {
@@ -865,7 +865,7 @@ header {
 
 .menu a {
   text-decoration: none;
-  color: #9fb1bc;
+  color: #cbe1ee;
 }
 
 .menu ul li a:hover {
@@ -907,7 +907,7 @@ footer {
 
 button {
   background-color: inherit;
-  color: #9fb1bc;
+  color: #cbe1ee;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   padding: 20px;
@@ -931,7 +931,7 @@ button:focus {
 }
 
 .card {
-  border: 1px solid #6e8898;
+  border: 1px solid #b8d3e4;
   border-radius: 0%;
   height: 570px;
   width: 310px;
@@ -1079,7 +1079,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #10132b;
+  background: #06070f;
   border-radius: var(--border-width);
 }
 
@@ -1274,7 +1274,7 @@ fieldset {
 #contact button[type="submit"] {
   cursor: pointer;
   border: none;
-  background: #10132b;
+  background: #06070f;
   color: lightgreen;
   margin-top: 10px;
   padding-top: 20px;
