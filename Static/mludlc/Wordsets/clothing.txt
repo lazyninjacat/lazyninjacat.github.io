@@ -1,0 +1,12 @@
+boots,
+coat,
+glasses,
+gloves,
+hat,
+pants,
+sandals,
+scarf,
+shirt,
+shoe,
+shoes,
+socks

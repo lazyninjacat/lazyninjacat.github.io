@@ -1,0 +1,10 @@
+ear,
+eyes,
+feet,
+hand,
+hands,
+mouth,
+nose,
+shoulder,
+thumb,
+toes
