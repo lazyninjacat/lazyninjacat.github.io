@@ -1,1 +1,1 @@
-apple, banana, broccoli, cake, candy, carrot, celery, cereal, cheese, cherry, coffee, cookie, egg, milk, orange, peach, peas, pepper, potato, strawberry, tea, water
+apple,banana,broccoli,cake,candy,carrot,celery,cereal,cheese,cherry,coffee,cookie,egg,milk,orange,peach,peas,pepper,potato,strawberry,tea,water

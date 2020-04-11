@@ -1,1 +1,1 @@
-black, blue, brown, green, grey, pink, purple, red, white, yellow
+black,blue,brown,green,grey,pink,purple,red,white,yellow
