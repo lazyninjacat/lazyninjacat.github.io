@@ -1,9 +1,1 @@
-airplane,
-bike,
-boat,
-bus,
-car,
-scooter,
-train,
-truck,
-van
+airplane,bike,boat,bus,car,scooter,train,truck,van
