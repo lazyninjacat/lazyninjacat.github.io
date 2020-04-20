@@ -1,0 +1,1 @@
+sign,color,vehicle,food,body,animal,clothing,shape,space,toy,weather
