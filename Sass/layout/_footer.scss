@@ -4,6 +4,10 @@ footer {
   justify-content: center;
   margin-top: 101px;
   width: 100%;
+
+  p{
+    font-size: smaller;
+  }
 }
 
 @media only screen and (max-width: $largescreen) {

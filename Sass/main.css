@@ -905,6 +905,10 @@ footer {
   width: 100%;
 }
 
+footer p {
+  font-size: smaller;
+}
+
 button {
   background-color: inherit;
   color: #cbe1ee;
