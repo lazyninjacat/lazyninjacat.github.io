@@ -26,12 +26,14 @@
       hsl(44, 45%, 48%),
       hsl(89, 45%, 56%),
       hsl(134, 45%, 62%),
-      hsl(179, 45%, 70%)
+      hsl(179, 45%, 70%),
+      #000
+
     );
     background-size: 500% 500%;
     background-position: 0 100%;
     border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 90s alternate infinite;
+    animation: moveGradient 10s alternate infinite;
   }
 }
 
